@@ -14,6 +14,8 @@
 		3E4D00BF284A99D40050B9B5 /* Dopomoha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00BD284A99D40050B9B5 /* Dopomoha.xcdatamodeld */; };
 		3E4D00C1284A99D60050B9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00C0284A99D60050B9B5 /* Assets.xcassets */; };
 		3E4D00C4284A99D60050B9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00C2284A99D60050B9B5 /* LaunchScreen.storyboard */; };
+		3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */; };
+		D1A56334E3AC96299A78BCAD /* Pods_Dopomoha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD7A1D695F52F2AA9751FE4 /* Pods_Dopomoha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		3E4D00C0284A99D60050B9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E4D00C3284A99D60050B9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E4D00C5284A99D60050B9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDetailController.swift; sourceTree = "<group>"; };
+		7CF18DEFF54753271781820C /* Pods-Dopomoha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopomoha.debug.xcconfig"; path = "Target Support Files/Pods-Dopomoha/Pods-Dopomoha.debug.xcconfig"; sourceTree = "<group>"; };
+		DC5CF6175D9A2014E74A54D0 /* Pods-Dopomoha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopomoha.release.xcconfig"; path = "Target Support Files/Pods-Dopomoha/Pods-Dopomoha.release.xcconfig"; sourceTree = "<group>"; };
+		EDD7A1D695F52F2AA9751FE4 /* Pods_Dopomoha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dopomoha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A56334E3AC96299A78BCAD /* Pods_Dopomoha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				3E4D00B3284A99D40050B9B5 /* Dopomoha */,
 				3E4D00B2284A99D40050B9B5 /* Products */,
+				6EE26151BA1D58C5ED3E95AC /* Pods */,
+				B2777FC66BF2E8B4E038819E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +75,26 @@
 				3E4D00C2284A99D60050B9B5 /* LaunchScreen.storyboard */,
 				3E4D00C5284A99D60050B9B5 /* Info.plist */,
 				3E4D00BD284A99D40050B9B5 /* Dopomoha.xcdatamodeld */,
+				3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */,
 			);
 			path = Dopomoha;
+			sourceTree = "<group>";
+		};
+		6EE26151BA1D58C5ED3E95AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CF18DEFF54753271781820C /* Pods-Dopomoha.debug.xcconfig */,
+				DC5CF6175D9A2014E74A54D0 /* Pods-Dopomoha.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2777FC66BF2E8B4E038819E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDD7A1D695F52F2AA9751FE4 /* Pods_Dopomoha.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E4D00C8284A99D60050B9B5 /* Build configuration list for PBXNativeTarget "Dopomoha" */;
 			buildPhases = (
+				A1A9FCAC6ADCCE5135B0719E /* [CP] Check Pods Manifest.lock */,
 				3E4D00AD284A99D40050B9B5 /* Sources */,
 				3E4D00AE284A99D40050B9B5 /* Frameworks */,
 				3E4D00AF284A99D40050B9B5 /* Resources */,
+				78916F202BC787B76E3392F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78916F202BC787B76E3392F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dopomoha/Pods-Dopomoha-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dopomoha/Pods-Dopomoha-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dopomoha/Pods-Dopomoha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A9FCAC6ADCCE5135B0719E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dopomoha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E4D00AD284A99D40050B9B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -145,6 +216,7 @@
 				3E4D00B9284A99D40050B9B5 /* ViewController.swift in Sources */,
 				3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */,
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
+				3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +358,7 @@
 		};
 		3E4D00C9284A99D60050B9B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF18DEFF54753271781820C /* Pods-Dopomoha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +370,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,6 +388,7 @@
 		};
 		3E4D00CA284A99D60050B9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC5CF6175D9A2014E74A54D0 /* Pods-Dopomoha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +400,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

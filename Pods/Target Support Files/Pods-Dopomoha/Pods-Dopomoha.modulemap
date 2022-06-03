@@ -1,0 +1,6 @@
+framework module Pods_Dopomoha {
+  umbrella header "Pods-Dopomoha-umbrella.h"
+
+  export *
+  module * { export * }
+}
