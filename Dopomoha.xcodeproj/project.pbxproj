@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E2B6AC4284D483F001DBD74 /* GetHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */; };
 		3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */; };
 		3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */; };
 		3E4D00B9284A99D40050B9B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B8284A99D40050B9B5 /* ViewController.swift */; };
@@ -15,10 +16,16 @@
 		3E4D00C1284A99D60050B9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00C0284A99D60050B9B5 /* Assets.xcassets */; };
 		3E4D00C4284A99D60050B9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00C2284A99D60050B9B5 /* LaunchScreen.storyboard */; };
 		3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */; };
+		3E4D00CF284B6F120050B9B5 /* HeaderSideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00CE284B6F120050B9B5 /* HeaderSideMenuView.swift */; };
+		3E4D00D1284B6F5D0050B9B5 /* FooterSideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00D0284B6F5D0050B9B5 /* FooterSideMenuView.swift */; };
+		3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2100284D5085005B0EB1 /* NewQueryController.swift */; };
+		3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */; };
+		3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A210A284D5C59005B0EB1 /* HelpCell.swift */; };
 		D1A56334E3AC96299A78BCAD /* Pods_Dopomoha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD7A1D695F52F2AA9751FE4 /* Pods_Dopomoha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHelpController.swift; sourceTree = "<group>"; };
 		3E4D00B1284A99D40050B9B5 /* Dopomoha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopomoha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +36,11 @@
 		3E4D00C3284A99D60050B9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E4D00C5284A99D60050B9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDetailController.swift; sourceTree = "<group>"; };
+		3E4D00CE284B6F120050B9B5 /* HeaderSideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSideMenuView.swift; sourceTree = "<group>"; };
+		3E4D00D0284B6F5D0050B9B5 /* FooterSideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterSideMenuView.swift; sourceTree = "<group>"; };
+		3E8A2100284D5085005B0EB1 /* NewQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQueryController.swift; sourceTree = "<group>"; };
+		3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedHelpController.swift; sourceTree = "<group>"; };
+		3E8A210A284D5C59005B0EB1 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
 		7CF18DEFF54753271781820C /* Pods-Dopomoha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopomoha.debug.xcconfig"; path = "Target Support Files/Pods-Dopomoha/Pods-Dopomoha.debug.xcconfig"; sourceTree = "<group>"; };
 		DC5CF6175D9A2014E74A54D0 /* Pods-Dopomoha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopomoha.release.xcconfig"; path = "Target Support Files/Pods-Dopomoha/Pods-Dopomoha.release.xcconfig"; sourceTree = "<group>"; };
 		EDD7A1D695F52F2AA9751FE4 /* Pods_Dopomoha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dopomoha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E2B6AC2284D481B001DBD74 /* GetHelp */ = {
+			isa = PBXGroup;
+			children = (
+				3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */,
+				3E8A2100284D5085005B0EB1 /* NewQueryController.swift */,
+			);
+			path = GetHelp;
+			sourceTree = "<group>";
+		};
 		3E4D00A8284A99D40050B9B5 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +88,10 @@
 		3E4D00B3284A99D40050B9B5 /* Dopomoha */ = {
 			isa = PBXGroup;
 			children = (
+				3E8A2109284D5779005B0EB1 /* NeedHelp */,
+				3E8A2108284D56F8005B0EB1 /* Cells */,
+				3E2B6AC2284D481B001DBD74 /* GetHelp */,
+				3E4D00CD284B6EE10050B9B5 /* SideMenu */,
 				3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */,
 				3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */,
 				3E4D00B8284A99D40050B9B5 /* ViewController.swift */,
@@ -75,9 +100,34 @@
 				3E4D00C2284A99D60050B9B5 /* LaunchScreen.storyboard */,
 				3E4D00C5284A99D60050B9B5 /* Info.plist */,
 				3E4D00BD284A99D40050B9B5 /* Dopomoha.xcdatamodeld */,
-				3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */,
 			);
 			path = Dopomoha;
+			sourceTree = "<group>";
+		};
+		3E4D00CD284B6EE10050B9B5 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */,
+				3E4D00CE284B6F120050B9B5 /* HeaderSideMenuView.swift */,
+				3E4D00D0284B6F5D0050B9B5 /* FooterSideMenuView.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		3E8A2108284D56F8005B0EB1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3E8A2109284D5779005B0EB1 /* NeedHelp */ = {
+			isa = PBXGroup;
+			children = (
+				3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */,
+				3E8A210A284D5C59005B0EB1 /* HelpCell.swift */,
+			);
+			path = NeedHelp;
 			sourceTree = "<group>";
 		};
 		6EE26151BA1D58C5ED3E95AC /* Pods */ = {
@@ -213,10 +263,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4D00BF284A99D40050B9B5 /* Dopomoha.xcdatamodeld in Sources */,
+				3E4D00CF284B6F120050B9B5 /* HeaderSideMenuView.swift in Sources */,
+				3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */,
+				3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */,
 				3E4D00B9284A99D40050B9B5 /* ViewController.swift in Sources */,
 				3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */,
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
 				3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */,
+				3E4D00D1284B6F5D0050B9B5 /* FooterSideMenuView.swift in Sources */,
+				3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */,
+				3E2B6AC4284D483F001DBD74 /* GetHelpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

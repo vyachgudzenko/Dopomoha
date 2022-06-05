@@ -1,21 +1,33 @@
 //
-//  SideMenuDetailController.swift
+//  GetHelpController.swift
 //  Dopomoha
 //
-//  Created by Вячеслав Гудзенко on 03.06.2022.
+//  Created by Вячеслав Гудзенко on 05.06.2022.
 //
 
 import UIKit
 
-class SideMenuDetailController: UIViewController {
+class GetHelpController: UIViewController {
 
+    @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupButton()
 
-        // Do any additional setup after loading the view.
+        
+       
     }
     
 
+    func setupButton(){
+        button.layer.backgroundColor = UIColor.yellow.cgColor
+        button.layer.cornerRadius = 15
+        
+    }
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        print("pressed")
+    }
     /*
     // MARK: - Navigation
 
