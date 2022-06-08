@@ -11,7 +11,6 @@ class SideMenuDetailController: UIViewController {
     
     var elementsOfSideMenuTable:[SideMenuElement] = [
         SideMenuElement(title: "О приложении", image: UIImage(named: "info.png")!,controller: "AboutController"),
-        SideMenuElement(title: "Поддержать", image: UIImage(named: "dollar.png")!,controller: "DonateController"),
         SideMenuElement(title: "Обратная связь", image: UIImage(named: "email.png")!,controller: "FeedBackController"),
         SideMenuElement(title: "Поделиться", image: UIImage(named: "share.png")!,controller: "ShareController")
         ]
@@ -33,7 +32,6 @@ class SideMenuDetailController: UIViewController {
         tableView.delegate = self
         let cellNib = UINib(nibName: SideMenuCell().identifier, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: SideMenuCell().identifier)
-        setupProfileImageView()
     }
     
     private func setupProfileImageView(){

@@ -28,7 +28,7 @@ class SideMenuCell: UITableViewCell {
     
     func setupCell(element:SideMenuElement){
         imageOfElement.image = element.image
-        imageOfElement.tintColor = .systemCyan
+        imageOfElement.tintColor = .red
         labelOfElement.text = element.title
     }
     
