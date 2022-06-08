@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3E2B6AC4284D483F001DBD74 /* GetHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */; };
+		3E2FF660284F99BF006800F2 /* SideMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF65F284F99BF006800F2 /* SideMenuElement.swift */; };
+		3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF661284F9B14006800F2 /* SideMenuCell.swift */; };
+		3E2FF664284F9B14006800F2 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E2FF662284F9B14006800F2 /* SideMenuCell.xib */; };
+		3E2FF667284FA816006800F2 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF666284FA816006800F2 /* AboutController.swift */; };
+		3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF668284FA82D006800F2 /* DonateController.swift */; };
+		3E2FF66B284FA857006800F2 /* FeedBackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF66A284FA857006800F2 /* FeedBackController.swift */; };
+		3E2FF66D284FA868006800F2 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF66C284FA868006800F2 /* ShareController.swift */; };
 		3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */; };
 		3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */; };
 		3E4D00B9284A99D40050B9B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B8284A99D40050B9B5 /* ViewController.swift */; };
@@ -26,6 +33,13 @@
 
 /* Begin PBXFileReference section */
 		3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHelpController.swift; sourceTree = "<group>"; };
+		3E2FF65F284F99BF006800F2 /* SideMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuElement.swift; sourceTree = "<group>"; };
+		3E2FF661284F9B14006800F2 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		3E2FF662284F9B14006800F2 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		3E2FF666284FA816006800F2 /* AboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		3E2FF668284FA82D006800F2 /* DonateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateController.swift; sourceTree = "<group>"; };
+		3E2FF66A284FA857006800F2 /* FeedBackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackController.swift; sourceTree = "<group>"; };
+		3E2FF66C284FA868006800F2 /* ShareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
 		3E4D00B1284A99D40050B9B5 /* Dopomoha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopomoha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +79,17 @@
 				3E8A2100284D5085005B0EB1 /* NewQueryController.swift */,
 			);
 			path = GetHelp;
+			sourceTree = "<group>";
+		};
+		3E2FF665284FA7EA006800F2 /* ElementsController */ = {
+			isa = PBXGroup;
+			children = (
+				3E2FF666284FA816006800F2 /* AboutController.swift */,
+				3E2FF668284FA82D006800F2 /* DonateController.swift */,
+				3E2FF66A284FA857006800F2 /* FeedBackController.swift */,
+				3E2FF66C284FA868006800F2 /* ShareController.swift */,
+			);
+			path = ElementsController;
 			sourceTree = "<group>";
 		};
 		3E4D00A8284A99D40050B9B5 = {
@@ -107,9 +132,13 @@
 		3E4D00CD284B6EE10050B9B5 /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				3E2FF665284FA7EA006800F2 /* ElementsController */,
 				3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */,
 				3E4D00CE284B6F120050B9B5 /* HeaderSideMenuView.swift */,
 				3E4D00D0284B6F5D0050B9B5 /* FooterSideMenuView.swift */,
+				3E2FF65F284F99BF006800F2 /* SideMenuElement.swift */,
+				3E2FF661284F9B14006800F2 /* SideMenuCell.swift */,
+				3E2FF662284F9B14006800F2 /* SideMenuCell.xib */,
 			);
 			path = SideMenu;
 			sourceTree = "<group>";
@@ -210,6 +239,7 @@
 				3E4D00C4284A99D60050B9B5 /* LaunchScreen.storyboard in Resources */,
 				3E4D00C1284A99D60050B9B5 /* Assets.xcassets in Resources */,
 				3E4D00BC284A99D40050B9B5 /* Main.storyboard in Resources */,
+				3E2FF664284F9B14006800F2 /* SideMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +294,18 @@
 			files = (
 				3E4D00BF284A99D40050B9B5 /* Dopomoha.xcdatamodeld in Sources */,
 				3E4D00CF284B6F120050B9B5 /* HeaderSideMenuView.swift in Sources */,
+				3E2FF66D284FA868006800F2 /* ShareController.swift in Sources */,
+				3E2FF660284F99BF006800F2 /* SideMenuElement.swift in Sources */,
 				3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */,
 				3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */,
+				3E2FF667284FA816006800F2 /* AboutController.swift in Sources */,
 				3E4D00B9284A99D40050B9B5 /* ViewController.swift in Sources */,
 				3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */,
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
+				3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */,
+				3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */,
 				3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */,
+				3E2FF66B284FA857006800F2 /* FeedBackController.swift in Sources */,
 				3E4D00D1284B6F5D0050B9B5 /* FooterSideMenuView.swift in Sources */,
 				3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */,
 				3E2B6AC4284D483F001DBD74 /* GetHelpController.swift in Sources */,

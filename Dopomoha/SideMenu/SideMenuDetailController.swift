@@ -8,24 +8,67 @@
 import UIKit
 
 class SideMenuDetailController: UIViewController {
+    
+    var elementsOfSideMenuTable:[SideMenuElement] = [
+        SideMenuElement(title: "О приложении", image: UIImage(named: "info.png")!,controller: "AboutController"),
+        SideMenuElement(title: "Поддержать", image: UIImage(named: "dollar.png")!,controller: "DonateController"),
+        SideMenuElement(title: "Обратная связь", image: UIImage(named: "email.png")!,controller: "FeedBackController"),
+        SideMenuElement(title: "Поделиться", image: UIImage(named: "share.png")!,controller: "ShareController")
+        ]
 
-    @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var footerView: UIView!
+    @IBOutlet weak var profileNameLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var profileImageView: UIImageView!
+
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBAction func buttnoPressed(_ sender: Any) {
+        print("button pressed")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+        let cellNib = UINib(nibName: SideMenuCell().identifier, bundle: nil)
+        tableView.register(cellNib, forCellReuseIdentifier: SideMenuCell().identifier)
+        setupProfileImageView()
+    }
+    
+    private func setupProfileImageView(){
+        profileImageView.layer.borderWidth = 2
+        profileImageView.layer.cornerRadius = 20
+        profileImageView.layer.borderColor = UIColor.systemCyan.cgColor
+    }
+}
+
+extension SideMenuDetailController:UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return elementsOfSideMenuTable.count    
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: SideMenuCell().identifier, for: indexPath) as! SideMenuCell
+        let elementOfTable = elementsOfSideMenuTable[indexPath.row]
+        cell.setupCell(element: elementOfTable)
+        return cell
+    }
+}
+
+extension SideMenuDetailController:UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let element = elementsOfSideMenuTable[indexPath.row]
+        goToSpecifiedController(controller: element.controller)
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func goToSpecifiedController(controller:String){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let specifiedController = storyboard.instantiateViewController(withIdentifier: controller)
+        navigationController?.pushViewController(specifiedController, animated: true)
     }
-    */
-
 }
