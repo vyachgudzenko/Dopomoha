@@ -36,7 +36,7 @@ class SideMenuDetailController: UIViewController {
     
     private func setupProfileImageView(){
         profileImageView.layer.borderWidth = 2
-        profileImageView.layer.cornerRadius = 20
+        profileImageView.layer.cornerRadius = 50
         profileImageView.layer.borderColor = UIColor.systemCyan.cgColor
     }
 }

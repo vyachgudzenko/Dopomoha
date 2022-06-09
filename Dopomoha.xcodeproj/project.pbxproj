@@ -10,6 +10,8 @@
 		3E1DDA372850D679004AB6BC /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1DDA362850D679004AB6BC /* StartViewController.swift */; };
 		3E1DDA392850D929004AB6BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1DDA382850D929004AB6BC /* SignUpViewController.swift */; };
 		3E1DDA602850EE32004AB6BC /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1DDA5F2850EE32004AB6BC /* TabbarController.swift */; };
+		3E1DDA882852919B004AB6BC /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1DDA872852919B004AB6BC /* Line.swift */; };
+		3E20AA4B2852B274006D7E1D /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E20AA4A2852B274006D7E1D /* EditProfileController.swift */; };
 		3E2B6AC4284D483F001DBD74 /* GetHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */; };
 		3E2FF660284F99BF006800F2 /* SideMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF65F284F99BF006800F2 /* SideMenuElement.swift */; };
 		3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF661284F9B14006800F2 /* SideMenuCell.swift */; };
@@ -35,6 +37,8 @@
 		3E1DDA362850D679004AB6BC /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3E1DDA382850D929004AB6BC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3E1DDA5F2850EE32004AB6BC /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		3E1DDA872852919B004AB6BC /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		3E20AA4A2852B274006D7E1D /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 		3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHelpController.swift; sourceTree = "<group>"; };
 		3E2FF65F284F99BF006800F2 /* SideMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuElement.swift; sourceTree = "<group>"; };
 		3E2FF661284F9B14006800F2 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
@@ -79,6 +83,14 @@
 				3E1DDA382850D929004AB6BC /* SignUpViewController.swift */,
 			);
 			path = Autorization;
+			sourceTree = "<group>";
+		};
+		3E1DDA8628529185004AB6BC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3E1DDA872852919B004AB6BC /* Line.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		3E2B6AC2284D481B001DBD74 /* GetHelp */ = {
@@ -131,6 +143,7 @@
 		3E4D00B3284A99D40050B9B5 /* Dopomoha */ = {
 			isa = PBXGroup;
 			children = (
+				3E1DDA8628529185004AB6BC /* Helper */,
 				3E1DDA352850D65F004AB6BC /* Autorization */,
 				3E2FF66E2850D4BD006800F2 /* Application */,
 				3E8A2109284D5779005B0EB1 /* NeedHelp */,
@@ -143,6 +156,7 @@
 				3E4D00C5284A99D60050B9B5 /* Info.plist */,
 				3E4D00BD284A99D40050B9B5 /* Dopomoha.xcdatamodeld */,
 				3E1DDA5F2850EE32004AB6BC /* TabbarController.swift */,
+				3E20AA4A2852B274006D7E1D /* EditProfileController.swift */,
 			);
 			path = Dopomoha;
 			sourceTree = "<group>";
@@ -315,6 +329,7 @@
 				3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */,
 				3E1DDA392850D929004AB6BC /* SignUpViewController.swift in Sources */,
 				3E2FF667284FA816006800F2 /* AboutController.swift in Sources */,
+				3E20AA4B2852B274006D7E1D /* EditProfileController.swift in Sources */,
 				3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */,
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
 				3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */,
@@ -323,6 +338,7 @@
 				3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */,
 				3E2FF66B284FA857006800F2 /* FeedBackController.swift in Sources */,
 				3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */,
+				3E1DDA882852919B004AB6BC /* Line.swift in Sources */,
 				3E2B6AC4284D483F001DBD74 /* GetHelpController.swift in Sources */,
 				3E1DDA602850EE32004AB6BC /* TabbarController.swift in Sources */,
 			);

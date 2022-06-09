@@ -23,7 +23,7 @@ class SignUpViewController: UIViewController {
     @IBAction func buttonPressed(_ sender:UIButton){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let specifiedController = storyboard.instantiateViewController(withIdentifier: "TabbarController")
-        navigationController?.pushViewController(specifiedController, animated: true)
+        navigationController?.popToViewController(specifiedController, animated: true)
     }
     
     private func setupButton(){

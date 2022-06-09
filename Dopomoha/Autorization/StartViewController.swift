@@ -8,7 +8,6 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
     
     @IBAction func buttonPressed(_ sender:UIButton){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -18,7 +17,6 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.isHidden = true
 
         // Do any additional setup after loading the view.
     }
