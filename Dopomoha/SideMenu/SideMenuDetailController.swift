@@ -11,8 +11,8 @@ class SideMenuDetailController: UIViewController {
     
     var elementsOfSideMenuTable:[SideMenuElement] = [
         SideMenuElement(title: "О приложении", image: UIImage(named: "info.png")!,controller: "AboutController"),
-        SideMenuElement(title: "Обратная связь", image: UIImage(named: "email.png")!,controller: "FeedBackController"),
-        SideMenuElement(title: "Поделиться", image: UIImage(named: "share.png")!,controller: "ShareController")
+        SideMenuElement(title: "Поддержать", image: UIImage(named: "dollar.png")!,controller: "DonateController"),
+        SideMenuElement(title: "Обратная связь", image: UIImage(named: "email.png")!,controller: "FeedBackController")
         ]
 
     @IBOutlet weak var profileNameLabel: UILabel!

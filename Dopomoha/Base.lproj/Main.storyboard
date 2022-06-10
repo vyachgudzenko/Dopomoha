@@ -17,9 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgH-JV-XxJ">
-                                <rect key="frame" x="155.66666666666666" y="436" width="116.66666666666666" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgH-JV-XxJ">
+                                <rect key="frame" x="20" y="64" width="388" height="367.66666666666669"/>
+                                <mutableString key="text">Hi, my Friend! In this difficult time, more than ever, we need to stick together and help each other in every way we can. This is our strength and therefore we will win! And to make mutual assistance as fast and efficient as possible, we have developed this app.
+Need food, medicine, fuel? Or maybe free hands for some work, a transfer or an overnight stay? Or maybe professional psychological help or just a friend? Anything. Leave a request and anyone within a certain radius from you will be able to see it and respond.
+And vice versa - do you have a desire and an opportunity to help your neighbor? Come see who near you needs help and go!
+It will also be very cool if you help this project - put 5 stars in the app store, write a comment, tell your friends about it. If you find a bug - write to us about it (the contact is in the menu) and soon it will be gone. And the most active ones can support us financially by subscribing for the price of a cup of coffee, cause the project is non-commercial, but the cloud technologies used here cost money.
+Something like this.
+Peace to all of us and Glory to Ukraine!</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -27,8 +33,9 @@
                         <viewLayoutGuide key="safeArea" id="lpy-oD-gvT"/>
                         <color key="backgroundColor" red="0.0" green="0.14901960780000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="MgH-JV-XxJ" firstAttribute="centerY" secondItem="6PR-da-g6C" secondAttribute="centerY" id="43o-ua-mER"/>
-                            <constraint firstItem="MgH-JV-XxJ" firstAttribute="centerX" secondItem="6PR-da-g6C" secondAttribute="centerX" id="8H4-3F-V1r"/>
+                            <constraint firstItem="MgH-JV-XxJ" firstAttribute="top" secondItem="lpy-oD-gvT" secondAttribute="top" constant="20" id="3gL-Av-c7b"/>
+                            <constraint firstItem="lpy-oD-gvT" firstAttribute="trailing" secondItem="MgH-JV-XxJ" secondAttribute="trailing" constant="20" id="obS-1D-IbL"/>
+                            <constraint firstItem="MgH-JV-XxJ" firstAttribute="leading" secondItem="lpy-oD-gvT" secondAttribute="leading" constant="20" id="yFm-we-a1N"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -44,9 +51,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Au-mg-15p">
-                                <rect key="frame" x="144.66666666666666" y="436" width="138.99999999999997" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T5-Ap-6XY">
+                                <rect key="frame" x="20" y="64.000000000000014" width="388" height="217.33333333333337"/>
+                                <mutableString key="text">Here you can do another good deed.
+This app does not pursue the goal of making money, it is a completely volunteer project and exists at the expense of the author. There will never be ads here. Therefore, if you suddenly find it useful and want it to grow and develop, you can support us financially. 
+
+Just a “cup of coffee” per month - and we have paid the bill for cloud services. The more such kind people with their coffee, the more vigorously the project develops, and the more cheerfully people help each other. And where there is more mutual assistance, people are more united and the country is stronger! What do you say?</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JyQ-WG-EsN">
+                                <rect key="frame" x="35" y="301.33333333333331" width="358" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herb" translatesAutoresizingMaskIntoConstraints="NO" id="hFl-rI-Lu8">
+                                        <rect key="frame" x="25" y="25" width="25" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FL1-P1-yRn"/>
+                                            <constraint firstAttribute="width" constant="25" id="mPh-TE-KIa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P.S. In addition to karma benefits, you will receive this cool Ukrainian trident next to your profile photo as a nice bonus  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yv6-q5-FX1">
+                                        <rect key="frame" x="75" y="18" width="268" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1058823466" green="0.22745099660000001" blue="0.32549020649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="hFl-rI-Lu8" firstAttribute="leading" secondItem="JyQ-WG-EsN" secondAttribute="leading" constant="25" id="DHR-TD-gx0"/>
+                                    <constraint firstItem="hFl-rI-Lu8" firstAttribute="top" secondItem="JyQ-WG-EsN" secondAttribute="top" constant="25" id="FYx-HF-aiS"/>
+                                    <constraint firstAttribute="height" constant="90" id="Gz1-CR-416"/>
+                                    <constraint firstItem="Yv6-q5-FX1" firstAttribute="leading" secondItem="hFl-rI-Lu8" secondAttribute="trailing" constant="25" id="kK8-I7-UHu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yv6-q5-FX1" secondAttribute="trailing" constant="15" id="r3H-6a-b8H"/>
+                                    <constraint firstItem="Yv6-q5-FX1" firstAttribute="top" secondItem="JyQ-WG-EsN" secondAttribute="top" constant="18" id="zOH-NG-pAu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2/month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itp-EN-h92">
+                                <rect key="frame" x="75" y="416.33333333333331" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cme-Id-YPm">
+                                <rect key="frame" x="204" y="406.33333333333331" width="149" height="31"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="Okn-vR-JU0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Contribute">
+                                    <color key="baseForegroundColor" red="0.043137254901960784" green="0.48627450980392156" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Payment will only be charged after purchase confirmation from your Google Account and you can cancel at any time." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Son-lX-kDc">
+                                <rect key="frame" x="20" y="462.33333333333331" width="388" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-xP-AxJ">
+                                <rect key="frame" x="20" y="505.99999999999994" width="388" height="57.333333333333314"/>
+                                <string key="text">After purchase, you can turn off auto-renew and manage subdcriptions by going to your Google Play Store Account Settings
+Personal data are processed in accordance with the terms of the Privacy policy</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,10 +123,28 @@
                         <viewLayoutGuide key="safeArea" id="pqA-XS-lvV"/>
                         <color key="backgroundColor" red="0.0" green="0.14901960780000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="7Au-mg-15p" firstAttribute="centerY" secondItem="dLI-ih-Hdf" secondAttribute="centerY" id="UWL-Fg-Lbf"/>
-                            <constraint firstItem="7Au-mg-15p" firstAttribute="centerX" secondItem="dLI-ih-Hdf" secondAttribute="centerX" id="pzA-l9-Yra"/>
+                            <constraint firstItem="Itp-EN-h92" firstAttribute="leading" secondItem="pqA-XS-lvV" secondAttribute="leading" constant="75" id="4ZB-1W-CDY"/>
+                            <constraint firstAttribute="trailing" secondItem="4Pp-xP-AxJ" secondAttribute="trailing" constant="20" id="7QH-N0-Eja"/>
+                            <constraint firstItem="Son-lX-kDc" firstAttribute="leading" secondItem="pqA-XS-lvV" secondAttribute="leading" constant="20" id="7ld-Ih-Bd5"/>
+                            <constraint firstItem="JyQ-WG-EsN" firstAttribute="top" secondItem="2T5-Ap-6XY" secondAttribute="bottom" constant="20" id="CSQ-lq-vhg"/>
+                            <constraint firstItem="Itp-EN-h92" firstAttribute="top" secondItem="JyQ-WG-EsN" secondAttribute="bottom" constant="25" id="D4i-us-ncG"/>
+                            <constraint firstAttribute="trailing" secondItem="Son-lX-kDc" secondAttribute="trailing" constant="20" id="Dw4-Gd-tgP"/>
+                            <constraint firstItem="pqA-XS-lvV" firstAttribute="trailing" secondItem="Cme-Id-YPm" secondAttribute="trailing" constant="75" id="Jds-8M-1Mh"/>
+                            <constraint firstItem="2T5-Ap-6XY" firstAttribute="leading" secondItem="pqA-XS-lvV" secondAttribute="leading" constant="20" id="K0b-tL-XTt"/>
+                            <constraint firstItem="4Pp-xP-AxJ" firstAttribute="top" secondItem="Son-lX-kDc" secondAttribute="bottom" constant="15" id="OAE-K6-yZv"/>
+                            <constraint firstAttribute="trailing" secondItem="2T5-Ap-6XY" secondAttribute="trailing" constant="20" id="T1G-im-7GT"/>
+                            <constraint firstItem="2T5-Ap-6XY" firstAttribute="top" secondItem="pqA-XS-lvV" secondAttribute="top" constant="20" id="WBm-13-m2m"/>
+                            <constraint firstItem="pqA-XS-lvV" firstAttribute="trailing" secondItem="JyQ-WG-EsN" secondAttribute="trailing" constant="35" id="WNH-HC-497"/>
+                            <constraint firstItem="JyQ-WG-EsN" firstAttribute="leading" secondItem="pqA-XS-lvV" secondAttribute="leading" constant="35" id="bvB-5f-l5i"/>
+                            <constraint firstItem="Son-lX-kDc" firstAttribute="top" secondItem="Cme-Id-YPm" secondAttribute="bottom" constant="25" id="f4j-RF-Ue4"/>
+                            <constraint firstItem="4Pp-xP-AxJ" firstAttribute="leading" secondItem="pqA-XS-lvV" secondAttribute="leading" constant="20" id="rUW-SU-c7a"/>
+                            <constraint firstItem="Cme-Id-YPm" firstAttribute="top" secondItem="JyQ-WG-EsN" secondAttribute="bottom" constant="15" id="upG-Mj-bPv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contributeButton" destination="Cme-Id-YPm" id="7e3-e5-AaD"/>
+                        <outlet property="middleView" destination="JyQ-WG-EsN" id="5Pw-NA-PDP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xuI-5Q-qfZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,38 +444,38 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8U0-Kg-1D4">
-                                        <rect key="frame" x="40" y="303" width="348" height="27.666666666666686"/>
+                                        <rect key="frame" x="40" y="303" width="348" height="26.666666666666686"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYj-Rk-a3t">
-                                        <rect key="frame" x="40" y="350.66666666666669" width="36" height="15"/>
+                                        <rect key="frame" x="40" y="349.66666666666669" width="36" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F1S-jL-7DS">
-                                        <rect key="frame" x="40" y="385.66666666666669" width="348" height="26.666666666666686"/>
+                                        <rect key="frame" x="40" y="384.66666666666669" width="348" height="26.666666666666686"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herb" translatesAutoresizingMaskIntoConstraints="NO" id="P1f-En-CBl">
-                                        <rect key="frame" x="40" y="432.33333333333331" width="25" height="40"/>
+                                        <rect key="frame" x="40" y="431.33333333333331" width="25" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="25" id="2mt-pg-nrm"/>
                                             <constraint firstAttribute="height" constant="40" id="Uvp-AU-mrG"/>
                                         </constraints>
                                     </imageView>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="JvX-lx-TpJ">
-                                        <rect key="frame" x="339" y="432.33333333333331" width="51" height="31"/>
+                                        <rect key="frame" x="339" y="431.33333333333331" width="51" height="31"/>
                                         <color key="onTintColor" red="0.30588235294117649" green="0.42352941176470588" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="thumbTintColor" red="0.11764705882352941" green="0.28235294117647058" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add this cool Ukrainian trident to your profile photo and support the project wirh it " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyD-jC-K8J">
-                                        <rect key="frame" x="80" y="432.33333333333331" width="244" height="61"/>
+                                        <rect key="frame" x="80" y="431.33333333333331" width="244" height="61"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -429,7 +516,9 @@
                             <constraint firstItem="3lP-RA-INV" firstAttribute="trailing" secondItem="7N6-bR-cK0" secondAttribute="trailing" id="iA9-Lg-eSq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GCd-fC-6vg"/>
+                    <navigationItem key="navigationItem" id="GCd-fC-6vg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="hX6-wV-j3j"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="donateSwitch" destination="JvX-lx-TpJ" id="CNw-zV-LeY"/>
                         <outlet property="nameTextField" destination="8U0-Kg-1D4" id="8Pb-xf-yM2"/>
