@@ -9,33 +9,25 @@ import UIKit
 
 class EditProfileController: UIViewController {
 
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profileImage: CustomImageView!
     @IBOutlet weak var profileName: UILabel!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var nameTextField: EditProfileTextField!
+    @IBOutlet weak var phoneTextField: EditProfileTextField!
     @IBOutlet weak var donateSwitch: UISwitch!
     
-    private func setupTextField(textField:UITextField){
-        let color = UIColor(red: 0.769, green: 0.769, blue: 0.769, alpha: 0.5).cgColor
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = color
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTextField(textField: nameTextField)
-        setupTextField(textField: phoneTextField)
+        profileImage.image = UIImage(named: "profile.jpg")
+        setupImageView(imageView: profileImage)
+       
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupImageView(imageView:UIImageView){
+        imageView.layer.cornerRadius = imageView.frame.height / 2
+        imageView.layer.borderColor = UIColor.systemCyan.cgColor
+        imageView.layer.borderWidth = 1
     }
-    */
-
 }

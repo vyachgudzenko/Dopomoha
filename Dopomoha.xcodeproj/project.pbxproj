@@ -20,6 +20,8 @@
 		3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF668284FA82D006800F2 /* DonateController.swift */; };
 		3E2FF66B284FA857006800F2 /* FeedBackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF66A284FA857006800F2 /* FeedBackController.swift */; };
 		3E2FF66D284FA868006800F2 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF66C284FA868006800F2 /* ShareController.swift */; };
+		3E3358642854AABA009A65E9 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3358632854AABA009A65E9 /* CustomImageView.swift */; };
+		3E3358682854AEAF009A65E9 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */; };
 		3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */; };
 		3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */; };
 		3E4D00BC284A99D40050B9B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00BA284A99D40050B9B5 /* Main.storyboard */; };
@@ -27,6 +29,7 @@
 		3E4D00C1284A99D60050B9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00C0284A99D60050B9B5 /* Assets.xcassets */; };
 		3E4D00C4284A99D60050B9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00C2284A99D60050B9B5 /* LaunchScreen.storyboard */; };
 		3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */; };
+		3E588CC22853576C00858CD2 /* EditProfileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E588CC12853576C00858CD2 /* EditProfileTextField.swift */; };
 		3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2100284D5085005B0EB1 /* NewQueryController.swift */; };
 		3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */; };
 		3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A210A284D5C59005B0EB1 /* HelpCell.swift */; };
@@ -47,6 +50,8 @@
 		3E2FF668284FA82D006800F2 /* DonateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateController.swift; sourceTree = "<group>"; };
 		3E2FF66A284FA857006800F2 /* FeedBackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackController.swift; sourceTree = "<group>"; };
 		3E2FF66C284FA868006800F2 /* ShareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
+		3E3358632854AABA009A65E9 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		3E4D00B1284A99D40050B9B5 /* Dopomoha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopomoha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		3E4D00C3284A99D60050B9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E4D00C5284A99D60050B9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDetailController.swift; sourceTree = "<group>"; };
+		3E588CC12853576C00858CD2 /* EditProfileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTextField.swift; sourceTree = "<group>"; };
 		3E8A2100284D5085005B0EB1 /* NewQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQueryController.swift; sourceTree = "<group>"; };
 		3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedHelpController.swift; sourceTree = "<group>"; };
 		3E8A210A284D5C59005B0EB1 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
@@ -89,6 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				3E1DDA872852919B004AB6BC /* Line.swift */,
+				3E588CC12853576C00858CD2 /* EditProfileTextField.swift */,
+				3E3358632854AABA009A65E9 /* CustomImageView.swift */,
+				3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -327,10 +336,13 @@
 				3E2FF660284F99BF006800F2 /* SideMenuElement.swift in Sources */,
 				3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */,
 				3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */,
+				3E588CC22853576C00858CD2 /* EditProfileTextField.swift in Sources */,
 				3E1DDA392850D929004AB6BC /* SignUpViewController.swift in Sources */,
+				3E3358682854AEAF009A65E9 /* CustomSegmentedControl.swift in Sources */,
 				3E2FF667284FA816006800F2 /* AboutController.swift in Sources */,
 				3E20AA4B2852B274006D7E1D /* EditProfileController.swift in Sources */,
 				3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */,
+				3E3358642854AABA009A65E9 /* CustomImageView.swift in Sources */,
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
 				3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */,
 				3E1DDA372850D679004AB6BC /* StartViewController.swift in Sources */,

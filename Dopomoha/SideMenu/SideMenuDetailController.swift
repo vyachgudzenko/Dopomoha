@@ -22,7 +22,7 @@ class SideMenuDetailController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func buttnoPressed(_ sender: Any) {
+    @IBAction func buttonPressed(_ sender: Any) {
         print("button pressed")
     }
     
@@ -32,12 +32,14 @@ class SideMenuDetailController: UIViewController {
         tableView.delegate = self
         let cellNib = UINib(nibName: SideMenuCell().identifier, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: SideMenuCell().identifier)
+        profileImageView.image = UIImage(named: "profile.jpg")
+        setupImageView(imageView: profileImageView)
     }
     
-    private func setupProfileImageView(){
-        profileImageView.layer.borderWidth = 2
-        profileImageView.layer.cornerRadius = 50
-        profileImageView.layer.borderColor = UIColor.systemCyan.cgColor
+    func setupImageView(imageView:UIImageView){
+        imageView.layer.cornerRadius = imageView.frame.height / 2
+        imageView.layer.borderColor = UIColor.systemCyan.cgColor
+        imageView.layer.borderWidth = 1
     }
 }
 
