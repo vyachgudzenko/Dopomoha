@@ -8,11 +8,13 @@
 import Foundation
 import UIKit
 
-@IBDesignable
+
 class CustomSegmentedControl: UIControl {
     var buttons = [UIButton]()
+    var categories:[String] = ["Материально","Физически","Морально"]
     var selector:UIView!
     var selectedSegmentIndex:Int = 0
+    var selectedType:String = "Материально"
     
     
     @IBInspectable
@@ -25,12 +27,6 @@ class CustomSegmentedControl: UIControl {
     var borderColor:UIColor = .clear {
         didSet{
             layer.borderColor = borderColor.cgColor
-        }
-    }
-    @IBInspectable
-    var commaSeparatedButtonTitles:String = "" {
-        didSet{
-            updateView()
         }
     }
     
@@ -59,15 +55,20 @@ class CustomSegmentedControl: UIControl {
             view.removeFromSuperview()
         }
         self.translatesAutoresizingMaskIntoConstraints = false
-        let buttonTitles = commaSeparatedButtonTitles.components(separatedBy: ",")
-        for buttonTitle in buttonTitles {
+        for buttonTitle in self.categories {
             let button = UIButton(type: .system)
             button.setTitle(buttonTitle, for: .normal)
             button.setTitleColor(textColor, for: .normal)
+            button.contentMode = .scaleAspectFit
             button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
             buttons.append(button)
         }
         buttons[0].setTitleColor(selectorTextColor, for: .normal)
+        let selectorWidth = frame.width / CGFloat(buttons.count)
+        selector = UIView(frame: CGRect(x: 0, y: 0, width: selectorWidth, height: frame.height))
+        selector.layer.cornerRadius = frame.height / 2
+        selector.backgroundColor = selectorColor
+        addSubview(selector)
         let stackView = UIStackView(arrangedSubviews: buttons)
         stackView.axis = .horizontal
         stackView.alignment = .fill
@@ -80,13 +81,11 @@ class CustomSegmentedControl: UIControl {
         stackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         
     }
+    
+    
     override func draw(_ rect: CGRect) {
         layer.cornerRadius = frame.height / 2
-        let selectorWidth = frame.width / CGFloat(buttons.count)
-        selector = UIView(frame: CGRect(x: 0, y: 0, width: selectorWidth, height: frame.height))
-        selector.layer.cornerRadius = frame.height / 2
-        selector.backgroundColor = selectorColor
-        addSubview(selector)
+        
     }
     
     @objc
@@ -95,6 +94,7 @@ class CustomSegmentedControl: UIControl {
             btn.setTitleColor(textColor, for: .normal)
             if btn == button{
                 selectedSegmentIndex = buttonIndex
+                selectedType = categories[selectedSegmentIndex]
                 let selectorStartPosition = frame.width / CGFloat(buttons.count) * CGFloat(buttonIndex)
                 UIView.animate(withDuration: 0.5) {
                     self.selector.frame.origin.x = selectorStartPosition

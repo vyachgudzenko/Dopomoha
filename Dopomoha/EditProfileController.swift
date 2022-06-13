@@ -9,7 +9,7 @@ import UIKit
 
 class EditProfileController: UIViewController {
 
-    @IBOutlet weak var profileImage: CustomImageView!
+    @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var nameTextField: EditProfileTextField!
     @IBOutlet weak var phoneTextField: EditProfileTextField!

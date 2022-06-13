@@ -646,10 +646,10 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ov-ZX-3p4" customClass="CustomSegmentedControl" customModule="Dopomoha" customModuleProvider="target">
-                                <rect key="frame" x="25" y="88" width="378" height="40"/>
+                                <rect key="frame" x="10" y="88" width="408" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="iZ2-I8-iuW"/>
+                                    <constraint firstAttribute="height" constant="40" id="tYq-wb-nCB"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="commaSeparatedButtonTitles" value="Material,physical,moral"/>
@@ -669,19 +669,47 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                         <color key="value" red="0.043137254899999998" green="0.48627450979999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segmentedControlChanged:" destination="aOg-LT-6E8" eventType="valueChanged" id="2Wv-m8-gwW"/>
+                                </connections>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I3w-Vj-qwv">
+                                <rect key="frame" x="0.0" y="138" width="428" height="500"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="cUH-Yi-9ry"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="x85-9V-xRy"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" red="0.1176470588" green="0.28235294119999998" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbQ-D0-iwC">
+                                <rect key="frame" x="273.33333333333331" y="668" width="119.66666666666669" height="40"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.91764705879999997" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jU5-Bg-t1C"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Опубликовать" titleAlignment="automatic"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="odE-Dm-gKS"/>
                         <color key="backgroundColor" red="0.0" green="0.14901960780000001" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="1ov-ZX-3p4" firstAttribute="leading" secondItem="odE-Dm-gKS" secondAttribute="leading" constant="25" id="dmP-f8-NhR"/>
-                            <constraint firstItem="1ov-ZX-3p4" firstAttribute="top" secondItem="odE-Dm-gKS" secondAttribute="top" id="jKm-fM-m4J"/>
-                            <constraint firstItem="odE-Dm-gKS" firstAttribute="trailing" secondItem="1ov-ZX-3p4" secondAttribute="trailing" constant="25" id="wWg-gw-h27"/>
+                            <constraint firstItem="1ov-ZX-3p4" firstAttribute="leading" secondItem="odE-Dm-gKS" secondAttribute="leading" constant="10" id="6LY-f2-QTg"/>
+                            <constraint firstItem="I3w-Vj-qwv" firstAttribute="top" secondItem="1ov-ZX-3p4" secondAttribute="bottom" constant="10" id="Bbr-3B-JZs"/>
+                            <constraint firstItem="PbQ-D0-iwC" firstAttribute="top" secondItem="I3w-Vj-qwv" secondAttribute="bottom" constant="30" id="MGn-z1-flG"/>
+                            <constraint firstItem="odE-Dm-gKS" firstAttribute="trailing" secondItem="1ov-ZX-3p4" secondAttribute="trailing" constant="10" id="Nph-r3-pWG"/>
+                            <constraint firstItem="odE-Dm-gKS" firstAttribute="trailing" secondItem="I3w-Vj-qwv" secondAttribute="trailing" id="Qva-v3-CTK"/>
+                            <constraint firstItem="odE-Dm-gKS" firstAttribute="trailing" secondItem="PbQ-D0-iwC" secondAttribute="trailing" constant="35" id="Rdg-Go-hSI"/>
+                            <constraint firstItem="1ov-ZX-3p4" firstAttribute="top" secondItem="odE-Dm-gKS" secondAttribute="top" id="RuF-qL-was"/>
+                            <constraint firstItem="I3w-Vj-qwv" firstAttribute="leading" secondItem="odE-Dm-gKS" secondAttribute="leading" id="VW7-0S-IFr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Что требуется?" id="Sod-v5-rQJ">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="checkmark" catalog="system" id="Rhy-U7-Fec"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Что требуется?" id="Sod-v5-rQJ"/>
+                    <connections>
+                        <outlet property="segmentedController" destination="1ov-ZX-3p4" id="D9D-eI-0vN"/>
+                        <outlet property="tableView" destination="I3w-Vj-qwv" id="XdP-eL-dIt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGi-Ub-BLp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
