@@ -9,9 +9,6 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    var autorizationNav:AutorizationNavigationController?
-
-    
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
@@ -19,13 +16,11 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         setupButton()
         setupTextField()
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func buttonPressed(_ sender:UIButton){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let specifiedController = storyboard.instantiateViewController(withIdentifier: "TabbarController")
-        navigationController?.pushViewController(specifiedController, animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
     
     private func setupButton(){

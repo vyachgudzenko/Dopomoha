@@ -20,11 +20,53 @@ class SideMenuDetailController: UIViewController {
     @IBOutlet weak var profileNameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
-
+    
+    @IBOutlet weak var editProfileButton: UIButton!
+    @IBOutlet weak var exitButton: UIButton!
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func goToEditProfile(_ sender:UIButton){
+        if user.isAuthorized{
+            let editProfile = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "EditProfileController")
+            navigationController?.pushViewController(editProfile, animated: true)
+        } else {
+            goToStart()
+        }
+    }
     
+    @IBAction func exitButtonPressed(_ sender: UIButton) {
+        if user.isAuthorized == false{
+            goToStart()
+        } else {
+            user.isAuthorized = !user.isAuthorized
+            setupProfileData()
+        }
+        
+    }
+    
+    private func setupProfileData(){
+        if user.isAuthorized{
+            exitButton.setTitle("Выход", for: .normal)
+            profileNameLabel.text = user.name
+            phoneLabel.text = user.phone
+            profileImageView.image = UIImage(named: "profile.jpg")
+            editProfileButton.setTitle("", for: .normal)
+        } else {
+            exitButton.setTitle("Регистрация", for: .normal)
+            profileNameLabel.text = ""
+            phoneLabel.text = ""
+            profileImageView.image = UIImage(systemName: "person")
+            editProfileButton.setTitle("Регистрация", for: .normal)
+            let image = UIImage()
+            editProfileButton.setImage(image, for: .normal)
+        }
+    }
+    
+    private func goToStart(){
+        let startVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StartViewController")
+        navigationController?.pushViewController(startVC, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,14 +74,12 @@ class SideMenuDetailController: UIViewController {
         tableView.delegate = self
         let cellNib = UINib(nibName: SideMenuCell().identifier, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: SideMenuCell().identifier)
-        profileImageView.image = UIImage(named: "profile.jpg")
         setupImageView(imageView: profileImageView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         user.loadUserData()
-        profileNameLabel.text = user.name
-        phoneLabel.text = user.phone
+        setupProfileData()
     }
     
     func setupImageView(imageView:UIImageView){

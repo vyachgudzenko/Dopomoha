@@ -21,6 +21,7 @@ class EditProfileController: UIViewController {
     private func saveChangeInProfie(_ sender:UIBarButtonItem){
         user.name = nameTextField.text
         user.phone = phoneTextField.text
+        user.isAuthorized = true
         user.saveUserData()
         navigationController?.popViewController(animated: true)
         
