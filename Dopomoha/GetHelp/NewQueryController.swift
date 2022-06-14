@@ -72,5 +72,10 @@ extension NewQueryController:UITableViewDataSource{
 }
 
 extension NewQueryController:UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let currentCategory = currentCategories[indexPath.row]
+        let createController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CreateQueryController") as! CreateQueryController
+        createController.typeOfHelp = currentCategory.title
+        navigationController?.pushViewController(createController, animated: true)
+    }
 }

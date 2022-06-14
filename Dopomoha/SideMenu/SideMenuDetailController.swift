@@ -22,9 +22,7 @@ class SideMenuDetailController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func buttonPressed(_ sender: Any) {
-        print("button pressed")
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

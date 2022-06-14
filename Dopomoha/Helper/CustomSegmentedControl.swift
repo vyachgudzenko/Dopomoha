@@ -92,6 +92,7 @@ class CustomSegmentedControl: UIControl {
     func buttonTapped(button:UIButton){
         for (buttonIndex,btn) in buttons.enumerated(){
             btn.setTitleColor(textColor, for: .normal)
+            btn.contentMode = .left
             if btn == button{
                 selectedSegmentIndex = buttonIndex
                 selectedType = categories[selectedSegmentIndex]

@@ -20,6 +20,7 @@
 		3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF668284FA82D006800F2 /* DonateController.swift */; };
 		3E2FF66B284FA857006800F2 /* FeedBackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF66A284FA857006800F2 /* FeedBackController.swift */; };
 		3E2FF66D284FA868006800F2 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF66C284FA868006800F2 /* ShareController.swift */; };
+		3E30D0A7285810240035AA6B /* YellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E30D0A6285810240035AA6B /* YellowButton.swift */; };
 		3E3358682854AEAF009A65E9 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */; };
 		3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */; };
 		3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 		3EED68932856A59E00534A2A /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED68922856A59E00534A2A /* CheckBox.swift */; };
 		3EED689828576E7800534A2A /* HelpQueryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED689628576E7800534A2A /* HelpQueryCell.swift */; };
 		3EED689928576E7800534A2A /* HelpQueryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EED689728576E7800534A2A /* HelpQueryCell.xib */; };
+		3EED689B2857851B00534A2A /* CreateQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED689A2857851B00534A2A /* CreateQueryController.swift */; };
 		D1A56334E3AC96299A78BCAD /* Pods_Dopomoha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD7A1D695F52F2AA9751FE4 /* Pods_Dopomoha.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,7 @@
 		3E2FF668284FA82D006800F2 /* DonateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateController.swift; sourceTree = "<group>"; };
 		3E2FF66A284FA857006800F2 /* FeedBackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBackController.swift; sourceTree = "<group>"; };
 		3E2FF66C284FA868006800F2 /* ShareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
+		3E30D0A6285810240035AA6B /* YellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowButton.swift; sourceTree = "<group>"; };
 		3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		3E4D00B1284A99D40050B9B5 /* Dopomoha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopomoha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +72,7 @@
 		3EED68922856A59E00534A2A /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		3EED689628576E7800534A2A /* HelpQueryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpQueryCell.swift; sourceTree = "<group>"; };
 		3EED689728576E7800534A2A /* HelpQueryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpQueryCell.xib; sourceTree = "<group>"; };
+		3EED689A2857851B00534A2A /* CreateQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQueryController.swift; sourceTree = "<group>"; };
 		7CF18DEFF54753271781820C /* Pods-Dopomoha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopomoha.debug.xcconfig"; path = "Target Support Files/Pods-Dopomoha/Pods-Dopomoha.debug.xcconfig"; sourceTree = "<group>"; };
 		DC5CF6175D9A2014E74A54D0 /* Pods-Dopomoha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopomoha.release.xcconfig"; path = "Target Support Files/Pods-Dopomoha/Pods-Dopomoha.release.xcconfig"; sourceTree = "<group>"; };
 		EDD7A1D695F52F2AA9751FE4 /* Pods_Dopomoha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dopomoha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +106,7 @@
 				3E588CC12853576C00858CD2 /* EditProfileTextField.swift */,
 				3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */,
 				3EED68922856A59E00534A2A /* CheckBox.swift */,
+				3E30D0A6285810240035AA6B /* YellowButton.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			children = (
 				3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */,
 				3E8A2100284D5085005B0EB1 /* NewQueryController.swift */,
+				3EED689A2857851B00534A2A /* CreateQueryController.swift */,
 			);
 			path = GetHelp;
 			sourceTree = "<group>";
@@ -350,11 +356,13 @@
 				3E2FF667284FA816006800F2 /* AboutController.swift in Sources */,
 				3E20AA4B2852B274006D7E1D /* EditProfileController.swift in Sources */,
 				3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */,
+				3EED689B2857851B00534A2A /* CreateQueryController.swift in Sources */,
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
 				3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */,
 				3E1DDA372850D679004AB6BC /* StartViewController.swift in Sources */,
 				3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */,
 				3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */,
+				3E30D0A7285810240035AA6B /* YellowButton.swift in Sources */,
 				3EED689828576E7800534A2A /* HelpQueryCell.swift in Sources */,
 				3E2FF66B284FA857006800F2 /* FeedBackController.swift in Sources */,
 				3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */,

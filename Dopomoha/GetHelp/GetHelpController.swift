@@ -9,21 +9,11 @@ import UIKit
 
 class GetHelpController: UIViewController {
 
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var button: YellowButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupButton()
-
-        
-       
     }
     
-
-    func setupButton(){
-        button.layer.backgroundColor = UIColor.yellow.cgColor
-        button.layer.cornerRadius = 15
-        
-    }
     
     @IBAction func buttonPressed(_ sender: Any) {
         print("pressed")

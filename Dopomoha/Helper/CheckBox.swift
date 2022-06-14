@@ -14,6 +14,13 @@ class CheckBox:UIControl {
     
     var checkmarkImageView:UIImageView!
     
+    @IBInspectable
+    var checkImageColor:UIColor = .tintColor {
+        didSet{
+            tintColor = checkImageColor
+        }
+    }
+    
     var isChecked:Bool = false {
         didSet{
             if isChecked{
@@ -29,7 +36,7 @@ class CheckBox:UIControl {
         layer.backgroundColor = UIColor.clear.cgColor
         checkmarkImageView = UIImageView(frame: rect)
         checkmarkImageView.image = uncheckmarkImage
-        checkmarkImageView.tintColor = .white
+        //checkmarkImageView.tintColor = .white
         addSubview(checkmarkImageView)
         let gesture = UITapGestureRecognizer(target: self, action: #selector(toggle))
         self.addGestureRecognizer(gesture)

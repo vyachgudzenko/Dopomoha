@@ -13,20 +13,14 @@ class DonateController: UIViewController {
     
     @IBOutlet weak var middleView: UIView!
     
-    @IBOutlet weak var contributeButton: UIButton!
+    @IBOutlet weak var contributeButton: YellowButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        setupButton()
-        // Do any additional setup after loading the view.
     }
     
     private func setupView(){
         middleView.layer.cornerRadius = 20
-    }
-    
-    private func setupButton(){
-        contributeButton.layer.cornerRadius = 15
     }
     
 }
