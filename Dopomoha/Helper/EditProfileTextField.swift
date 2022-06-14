@@ -13,6 +13,7 @@ class EditProfileTextField: UITextField {
         let color = UIColor(red: 0.769, green: 0.769, blue: 0.769, alpha: 0.5)
         self.layer.borderWidth = 1
         self.layer.borderColor = color.cgColor
+        self.textColor = .white
     }
     
 }

@@ -22,6 +22,7 @@
 		3E2FF66D284FA868006800F2 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF66C284FA868006800F2 /* ShareController.swift */; };
 		3E30D0A7285810240035AA6B /* YellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E30D0A6285810240035AA6B /* YellowButton.swift */; };
 		3E3358682854AEAF009A65E9 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */; };
+		3E3A0B0A2858A5B700ABFD45 /* AutorizationNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3A0B092858A5B700ABFD45 /* AutorizationNavigationController.swift */; };
 		3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */; };
 		3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */; };
 		3E4D00BC284A99D40050B9B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00BA284A99D40050B9B5 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 		3E4D00C4284A99D60050B9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00C2284A99D60050B9B5 /* LaunchScreen.storyboard */; };
 		3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */; };
 		3E588CC22853576C00858CD2 /* EditProfileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E588CC12853576C00858CD2 /* EditProfileTextField.swift */; };
+		3E7B46622858CD3100A25A27 /* MyHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46612858CD3100A25A27 /* MyHelpController.swift */; };
+		3E7B46642858CE5900A25A27 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46632858CE5900A25A27 /* File.swift */; };
 		3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2100284D5085005B0EB1 /* NewQueryController.swift */; };
 		3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */; };
 		3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A210A284D5C59005B0EB1 /* HelpCell.swift */; };
@@ -56,6 +59,7 @@
 		3E2FF66C284FA868006800F2 /* ShareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
 		3E30D0A6285810240035AA6B /* YellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowButton.swift; sourceTree = "<group>"; };
 		3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		3E3A0B092858A5B700ABFD45 /* AutorizationNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationNavigationController.swift; sourceTree = "<group>"; };
 		3E4D00B1284A99D40050B9B5 /* Dopomoha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopomoha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 		3E4D00C5284A99D60050B9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4D00CB284AA1A90050B9B5 /* SideMenuDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuDetailController.swift; sourceTree = "<group>"; };
 		3E588CC12853576C00858CD2 /* EditProfileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTextField.swift; sourceTree = "<group>"; };
+		3E7B46612858CD3100A25A27 /* MyHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHelpController.swift; sourceTree = "<group>"; };
+		3E7B46632858CE5900A25A27 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3E8A2100284D5085005B0EB1 /* NewQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQueryController.swift; sourceTree = "<group>"; };
 		3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedHelpController.swift; sourceTree = "<group>"; };
 		3E8A210A284D5C59005B0EB1 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 			children = (
 				3E1DDA362850D679004AB6BC /* StartViewController.swift */,
 				3E1DDA382850D929004AB6BC /* SignUpViewController.swift */,
+				3E3A0B092858A5B700ABFD45 /* AutorizationNavigationController.swift */,
 			);
 			path = Autorization;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 				3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */,
 				3EED68922856A59E00534A2A /* CheckBox.swift */,
 				3E30D0A6285810240035AA6B /* YellowButton.swift */,
+				3E7B46632858CE5900A25A27 /* File.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 				3E2B6AC3284D483E001DBD74 /* GetHelpController.swift */,
 				3E8A2100284D5085005B0EB1 /* NewQueryController.swift */,
 				3EED689A2857851B00534A2A /* CreateQueryController.swift */,
+				3E7B46612858CD3100A25A27 /* MyHelpController.swift */,
 			);
 			path = GetHelp;
 			sourceTree = "<group>";
@@ -141,6 +150,13 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		3E3A0B0B2858BEEC00ABFD45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3E4D00A8284A99D40050B9B5 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +178,7 @@
 		3E4D00B3284A99D40050B9B5 /* Dopomoha */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A0B0B2858BEEC00ABFD45 /* Model */,
 				3EA72B03285623CC007883DF /* Cell */,
 				3E1DDA8628529185004AB6BC /* Helper */,
 				3E1DDA352850D65F004AB6BC /* Autorization */,
@@ -353,11 +370,13 @@
 				3E1DDA392850D929004AB6BC /* SignUpViewController.swift in Sources */,
 				3E3358682854AEAF009A65E9 /* CustomSegmentedControl.swift in Sources */,
 				3EED68932856A59E00534A2A /* CheckBox.swift in Sources */,
+				3E7B46642858CE5900A25A27 /* File.swift in Sources */,
 				3E2FF667284FA816006800F2 /* AboutController.swift in Sources */,
 				3E20AA4B2852B274006D7E1D /* EditProfileController.swift in Sources */,
 				3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */,
 				3EED689B2857851B00534A2A /* CreateQueryController.swift in Sources */,
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
+				3E7B46622858CD3100A25A27 /* MyHelpController.swift in Sources */,
 				3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */,
 				3E1DDA372850D679004AB6BC /* StartViewController.swift in Sources */,
 				3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */,
@@ -368,6 +387,7 @@
 				3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */,
 				3E1DDA882852919B004AB6BC /* Line.swift in Sources */,
 				3E2B6AC4284D483F001DBD74 /* GetHelpController.swift in Sources */,
+				3E3A0B0A2858A5B700ABFD45 /* AutorizationNavigationController.swift in Sources */,
 				3E1DDA602850EE32004AB6BC /* TabbarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

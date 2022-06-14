@@ -11,7 +11,7 @@ class StartViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender:UIButton){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let specifiedController = storyboard.instantiateViewController(withIdentifier: "SignUpViewController")
+        let specifiedController = storyboard.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
         navigationController?.pushViewController(specifiedController, animated: true)
     }
     

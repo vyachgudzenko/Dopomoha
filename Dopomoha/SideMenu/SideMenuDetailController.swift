@@ -14,6 +14,8 @@ class SideMenuDetailController: UIViewController {
         SideMenuElement(title: "Поддержать", image: UIImage(named: "dollar.png")!,controller: "DonateController"),
         SideMenuElement(title: "Обратная связь", image: UIImage(named: "email.png")!,controller: "FeedBackController")
         ]
+    
+    var user = User()
 
     @IBOutlet weak var profileNameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
@@ -32,6 +34,12 @@ class SideMenuDetailController: UIViewController {
         tableView.register(cellNib, forCellReuseIdentifier: SideMenuCell().identifier)
         profileImageView.image = UIImage(named: "profile.jpg")
         setupImageView(imageView: profileImageView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        user.loadUserData()
+        profileNameLabel.text = user.name
+        phoneLabel.text = user.phone
     }
     
     func setupImageView(imageView:UIImageView){

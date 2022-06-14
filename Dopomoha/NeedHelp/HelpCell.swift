@@ -10,7 +10,7 @@ import UIKit
 class HelpCell: UICollectionViewCell {
     
     
-    @IBOutlet weak var saveOurSoulsLabel: UILabel!
+    @IBOutlet weak var sosLabel: UILabel!
     
     @IBOutlet weak var typeLabel: UILabel!
     
@@ -31,7 +31,7 @@ class HelpCell: UICollectionViewCell {
             self.layer.borderColor = UIColor.red.cgColor
             self.layer.borderWidth = 1
         } else{
-            saveOurSoulsLabel.isEnabled = false
+            sosLabel.isEnabled = false
         }
     }
 }

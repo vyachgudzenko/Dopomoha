@@ -528,7 +528,11 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Редактировать профиль" id="GCd-fC-6vg">
-                        <barButtonItem key="rightBarButtonItem" image="checkmark" catalog="system" id="hX6-wV-j3j"/>
+                        <barButtonItem key="rightBarButtonItem" image="checkmark" catalog="system" id="hX6-wV-j3j">
+                            <connections>
+                                <action selector="saveChangeInProfie:" destination="cef-m2-hfn" id="9Sg-xv-CON"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="donateSwitch" destination="JvX-lx-TpJ" id="CNw-zV-LeY"/>
@@ -586,10 +590,25 @@ Personal data are processed in accordance with the terms of the Privacy policy</
             </objects>
             <point key="canvasLocation" x="-1199" y="777"/>
         </scene>
+        <!--My Help Controller-->
+        <scene sceneID="J9z-pn-Odw">
+            <objects>
+                <viewController storyboardIdentifier="MyHelpController" id="1ZT-KL-5sy" customClass="MyHelpController" customModule="Dopomoha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eMP-fD-MXF">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1gA-l4-EnF"/>
+                        <color key="backgroundColor" red="0.0" green="0.14901960784313725" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37b-Ta-Ogo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1961" y="1552"/>
+        </scene>
         <!--Получить помощь-->
         <scene sceneID="rKF-68-ynd">
             <objects>
-                <viewController id="Mdb-4R-t1b" customClass="GetHelpController" customModule="Dopomoha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GetHelpController" id="Mdb-4R-t1b" customClass="GetHelpController" customModule="Dopomoha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tez-w8-7pm">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -628,7 +647,11 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                 <segue destination="PP3-nn-Iax" kind="presentation" id="3cs-Wf-hmx"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="line.3.horizontal.decrease" catalog="system" id="5Fm-Mk-8cs"/>
+                        <barButtonItem key="rightBarButtonItem" title="Моя помощь" id="5Fm-Mk-8cs">
+                            <connections>
+                                <action selector="myHelpPressed:" destination="Mdb-4R-t1b" id="RiO-5d-D2Y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="button" destination="FIg-q2-IfY" id="3JH-Lg-jhr"/>
@@ -788,7 +811,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                             <outlet property="dateLabel" destination="sTl-Mc-Xlq" id="ZdY-tE-PcA"/>
                                             <outlet property="descriptionLabel" destination="bYf-lo-euA" id="P8X-vA-LWd"/>
                                             <outlet property="distanceLabel" destination="ah5-Ah-Gp8" id="eMa-E9-pWm"/>
-                                            <outlet property="saveOurSoulsLabel" destination="tIn-LL-Yuf" id="Hj0-n0-xBB"/>
+                                            <outlet property="sosLabel" destination="tIn-LL-Yuf" id="Hj0-n0-xBB"/>
                                             <outlet property="typeLabel" destination="32h-yG-XDj" id="Wl3-Da-yjL"/>
                                         </connections>
                                     </collectionViewCell>
@@ -846,10 +869,10 @@ Personal data are processed in accordance with the terms of the Privacy policy</
             </objects>
             <point key="canvasLocation" x="1413" y="729"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Autorization Navigation Controller-->
         <scene sceneID="LIT-Gf-N8Y">
             <objects>
-                <navigationController id="Tky-GB-GCx" sceneMemberID="viewController">
+                <navigationController id="Tky-GB-GCx" customClass="AutorizationNavigationController" customModule="Dopomoha" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QOe-jB-klG">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

@@ -1,24 +1,21 @@
 //
-//  GetHelpController.swift
+//  MyHelpController.swift
 //  Dopomoha
 //
-//  Created by Вячеслав Гудзенко on 05.06.2022.
+//  Created by Вячеслав Гудзенко on 14.06.2022.
 //
 
 import UIKit
 
-class GetHelpController: UIViewController {
+class MyHelpController: UIViewController {
 
-    @IBOutlet weak var button: YellowButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func myHelpPressed(_ sender: UIBarButtonItem) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyHelpController")
-        navigationController?.pushViewController(vc, animated: true)
-    }
+
     /*
     // MARK: - Navigation
 
