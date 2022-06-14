@@ -53,8 +53,6 @@ class CreateQueryController: UIViewController {
         user.loadUserData()
         nameLabel.text = user.name
         phoneLabel.text = user.phone
-        print(user)
-        print(nameLabel.text)
     }
     
     private func setupButton(){

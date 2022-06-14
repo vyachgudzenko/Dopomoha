@@ -30,6 +30,8 @@ class NeedHelpController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        let cellNib = UINib(nibName: HelpPrototypeCell().identifier, bundle: nil)
+        collectionView.register(cellNib, forCellWithReuseIdentifier: HelpPrototypeCell().identifier)
         
     }
     
@@ -54,7 +56,7 @@ extension NeedHelpController:UICollectionViewDataSource{
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HelpCell", for: indexPath) as! HelpCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HelpPrototypeCell", for: indexPath) as! HelpPrototypeCell
         let currentHelp = helpsList[indexPath.item]
         cell.setupCell(help: currentHelp)
         return cell

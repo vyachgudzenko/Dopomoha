@@ -33,6 +33,8 @@
 		3E588CC22853576C00858CD2 /* EditProfileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E588CC12853576C00858CD2 /* EditProfileTextField.swift */; };
 		3E7B46622858CD3100A25A27 /* MyHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46612858CD3100A25A27 /* MyHelpController.swift */; };
 		3E7B46642858CE5900A25A27 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46632858CE5900A25A27 /* File.swift */; };
+		3E7B46692858D76300A25A27 /* HelpPrototypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46672858D76300A25A27 /* HelpPrototypeCell.swift */; };
+		3E7B466A2858D76300A25A27 /* HelpPrototypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7B46682858D76300A25A27 /* HelpPrototypeCell.xib */; };
 		3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2100284D5085005B0EB1 /* NewQueryController.swift */; };
 		3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */; };
 		3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A210A284D5C59005B0EB1 /* HelpCell.swift */; };
@@ -72,6 +74,8 @@
 		3E588CC12853576C00858CD2 /* EditProfileTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTextField.swift; sourceTree = "<group>"; };
 		3E7B46612858CD3100A25A27 /* MyHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHelpController.swift; sourceTree = "<group>"; };
 		3E7B46632858CE5900A25A27 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3E7B46672858D76300A25A27 /* HelpPrototypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPrototypeCell.swift; sourceTree = "<group>"; };
+		3E7B46682858D76300A25A27 /* HelpPrototypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpPrototypeCell.xib; sourceTree = "<group>"; };
 		3E8A2100284D5085005B0EB1 /* NewQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQueryController.swift; sourceTree = "<group>"; };
 		3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedHelpController.swift; sourceTree = "<group>"; };
 		3E8A210A284D5C59005B0EB1 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
@@ -223,6 +227,8 @@
 			children = (
 				3EED689628576E7800534A2A /* HelpQueryCell.swift */,
 				3EED689728576E7800534A2A /* HelpQueryCell.xib */,
+				3E7B46672858D76300A25A27 /* HelpPrototypeCell.swift */,
+				3E7B46682858D76300A25A27 /* HelpPrototypeCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4D00C4284A99D60050B9B5 /* LaunchScreen.storyboard in Resources */,
+				3E7B466A2858D76300A25A27 /* HelpPrototypeCell.xib in Resources */,
 				3EED689928576E7800534A2A /* HelpQueryCell.xib in Resources */,
 				3E4D00C1284A99D60050B9B5 /* Assets.xcassets in Resources */,
 				3E4D00BC284A99D40050B9B5 /* Main.storyboard in Resources */,
@@ -361,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7B46692858D76300A25A27 /* HelpPrototypeCell.swift in Sources */,
 				3E4D00BF284A99D40050B9B5 /* Dopomoha.xcdatamodeld in Sources */,
 				3E2FF66D284FA868006800F2 /* ShareController.swift in Sources */,
 				3E2FF660284F99BF006800F2 /* SideMenuElement.swift in Sources */,

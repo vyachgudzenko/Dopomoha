@@ -597,9 +597,40 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                     <view key="view" contentMode="scaleToFill" id="eMP-fD-MXF">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QO2-e9-T3V">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aSc-fa-jif">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eAd-fh-nll">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SPp-Cs-H3M">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1gA-l4-EnF"/>
                         <color key="backgroundColor" red="0.0" green="0.14901960784313725" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="1gA-l4-EnF" firstAttribute="trailing" secondItem="QO2-e9-T3V" secondAttribute="trailing" id="2lp-5c-HZp"/>
+                            <constraint firstItem="QO2-e9-T3V" firstAttribute="leading" secondItem="1gA-l4-EnF" secondAttribute="leading" id="EBt-N5-tkG"/>
+                            <constraint firstItem="QO2-e9-T3V" firstAttribute="top" secondItem="1gA-l4-EnF" secondAttribute="top" id="KPp-tU-v0T"/>
+                            <constraint firstItem="1gA-l4-EnF" firstAttribute="bottom" secondItem="QO2-e9-T3V" secondAttribute="bottom" id="gNO-Oy-xe5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="QO2-e9-T3V" id="qge-ml-srT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="37b-Ta-Ogo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -805,7 +836,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                                 <constraint firstItem="tIn-LL-Yuf" firstAttribute="top" secondItem="ICM-oT-NOW" secondAttribute="top" constant="8" id="kuv-6w-0Xn"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.1607843041" green="0.27843138579999999" blue="0.3686274886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.16078431372549018" green="0.27843137254901962" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <size key="customSize" width="419" height="183"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="sTl-Mc-Xlq" id="ZdY-tE-PcA"/>
@@ -1236,7 +1267,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3cs-Wf-hmx"/>
+        <segue reference="Lao-A6-F7W"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="StartImage" width="98" height="98"/>
