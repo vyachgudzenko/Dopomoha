@@ -34,6 +34,7 @@
 		3E7B46642858CE5900A25A27 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46632858CE5900A25A27 /* File.swift */; };
 		3E7B46692858D76300A25A27 /* HelpPrototypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46672858D76300A25A27 /* HelpPrototypeCell.swift */; };
 		3E7B466A2858D76300A25A27 /* HelpPrototypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7B46682858D76300A25A27 /* HelpPrototypeCell.xib */; };
+		3E7B4693285A27E300A25A27 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B4692285A27E300A25A27 /* CustomAlert.swift */; };
 		3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2100284D5085005B0EB1 /* NewQueryController.swift */; };
 		3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */; };
 		3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A210A284D5C59005B0EB1 /* HelpCell.swift */; };
@@ -74,6 +75,7 @@
 		3E7B46632858CE5900A25A27 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3E7B46672858D76300A25A27 /* HelpPrototypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPrototypeCell.swift; sourceTree = "<group>"; };
 		3E7B46682858D76300A25A27 /* HelpPrototypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpPrototypeCell.xib; sourceTree = "<group>"; };
+		3E7B4692285A27E300A25A27 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		3E8A2100284D5085005B0EB1 /* NewQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQueryController.swift; sourceTree = "<group>"; };
 		3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedHelpController.swift; sourceTree = "<group>"; };
 		3E8A210A284D5C59005B0EB1 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				3EED68922856A59E00534A2A /* CheckBox.swift */,
 				3E30D0A6285810240035AA6B /* YellowButton.swift */,
 				3E7B46632858CE5900A25A27 /* File.swift */,
+				3E7B4692285A27E300A25A27 /* CustomAlert.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
 				3E7B46622858CD3100A25A27 /* MyHelpController.swift in Sources */,
 				3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */,
+				3E7B4693285A27E300A25A27 /* CustomAlert.swift in Sources */,
 				3E1DDA372850D679004AB6BC /* StartViewController.swift in Sources */,
 				3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */,
 				3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */,

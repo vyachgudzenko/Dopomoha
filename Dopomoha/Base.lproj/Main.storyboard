@@ -841,7 +841,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                                 <constraint firstItem="tIn-LL-Yuf" firstAttribute="top" secondItem="ICM-oT-NOW" secondAttribute="top" constant="8" id="kuv-6w-0Xn"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.16078431372549018" green="0.27843137254901962" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.161" green="0.27843137254901962" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <size key="customSize" width="419" height="183"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="sTl-Mc-Xlq" id="ZdY-tE-PcA"/>

@@ -8,16 +8,25 @@
 import UIKit
 
 class GetHelpController: UIViewController {
+    
+    let dopomohaAlert = DopomohaAlert()
 
     @IBOutlet weak var button: YellowButton!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+    @objc
+    func dismissAlert(){
+        dopomohaAlert.dismissAlert()
+    }
+    
     
     @IBAction func myHelpPressed(_ sender: UIBarButtonItem) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyHelpController")
-        navigationController?.pushViewController(vc, animated: true)
+        /*let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyHelpController")
+        navigationController?.pushViewController(vc, animated: true)*/
+        dopomohaAlert.showAlert(title: "First message", messsage: "Its first message from custom alertController Its first message from custom alertController", viewController: self)
+        
     }
     /*
     // MARK: - Navigation
