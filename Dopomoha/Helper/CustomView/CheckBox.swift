@@ -9,10 +9,8 @@ import UIKit
 
 class CheckBox:UIControl {
     
-    @IBInspectable
     let checkmarkImage:UIImage = UIImage(systemName: "checkmark.square")!
     
-    @IBInspectable
     let uncheckmarkImage:UIImage = UIImage(systemName: "square")!
     
     var checkmarkImageView:UIImageView!

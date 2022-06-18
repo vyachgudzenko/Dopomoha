@@ -10,10 +10,17 @@ import UIKit
 class GetHelpController: UIViewController {
 
     @IBOutlet weak var button: YellowButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem?.tintColor = .yellow
     }
     
+    @IBAction func createNewQuery(_ sender:UIButton){
+        let alert = CustomAlert()
+        alert.delegate = self
+        alert.showAlert(title: "sfsdfs", message: "dgfdgdfgdfg", okButtonType: .authorization)
+    }
     
     
     @IBAction func myHelpPressed(_ sender: UIBarButtonItem) {
@@ -21,24 +28,4 @@ class GetHelpController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
         
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-
-extension GetHelpController:CustomAlertDelegate{
-    func okButtonAction(_ alert: CustomAlert) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "StartViewController")
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    
 }

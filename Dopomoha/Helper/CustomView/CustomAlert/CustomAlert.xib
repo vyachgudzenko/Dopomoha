@@ -30,14 +30,14 @@
                             <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MJb-Nt-qO6">
-                                    <rect key="frame" x="0.0" y="1.5" width="50" height="47.5"/>
+                                    <rect key="frame" x="10" y="1.5" width="50" height="47.5"/>
                                     <color key="tintColor" systemColor="systemYellowColor"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="yal-ix-n5F"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJs-nZ-3Al">
-                                    <rect key="frame" x="70" y="15" width="41.5" height="20.5"/>
+                                    <rect key="frame" x="80" y="15" width="41.5" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -47,7 +47,7 @@
                             <constraints>
                                 <constraint firstItem="PJs-nZ-3Al" firstAttribute="leading" secondItem="MJb-Nt-qO6" secondAttribute="trailing" constant="20" id="7VY-Ol-4IY"/>
                                 <constraint firstAttribute="height" constant="50" id="C8X-BJ-H7u"/>
-                                <constraint firstItem="MJb-Nt-qO6" firstAttribute="leading" secondItem="tp7-WB-lfq" secondAttribute="leading" id="JDi-NC-TP7"/>
+                                <constraint firstItem="MJb-Nt-qO6" firstAttribute="leading" secondItem="tp7-WB-lfq" secondAttribute="leading" constant="10" id="SDa-Jj-eMj"/>
                                 <constraint firstItem="PJs-nZ-3Al" firstAttribute="centerY" secondItem="tp7-WB-lfq" secondAttribute="centerY" id="bUm-XS-Bbe"/>
                                 <constraint firstAttribute="bottom" secondItem="MJb-Nt-qO6" secondAttribute="bottom" id="gEh-B7-PO1"/>
                                 <constraint firstItem="MJb-Nt-qO6" firstAttribute="top" secondItem="tp7-WB-lfq" secondAttribute="top" id="kLM-dm-M4T"/>
