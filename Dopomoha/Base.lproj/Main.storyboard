@@ -314,7 +314,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aYQ-Hj-Pru">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aYQ-Hj-Pru" customClass="RoundImageView" customModule="Dopomoha" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="31.666666666666657" width="30" height="27.333333333333343"/>
                                                 <color key="tintColor" red="0.01176470588" green="0.66274509800000003" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -413,7 +413,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-A3-zgJ">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="215"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1Tv-sq-ddc" customClass="CustomImageView" customModule="Dopomoha" customModuleProvider="target">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1Tv-sq-ddc" customClass="RoundImageView" customModule="Dopomoha" customModuleProvider="target">
                                                 <rect key="frame" x="164" y="59.333333333333336" width="100" height="97.333333333333329"/>
                                                 <color key="tintColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>

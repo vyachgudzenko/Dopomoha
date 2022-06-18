@@ -11,7 +11,7 @@ class EditProfileController: UIViewController {
     
     var user = User()
 
-    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profileImage: RoundImageView!
     @IBOutlet weak var profileName: UILabel!
     @IBOutlet weak var nameTextField: EditProfileTextField!
     @IBOutlet weak var phoneTextField: EditProfileTextField!
@@ -30,7 +30,6 @@ class EditProfileController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         profileImage.image = UIImage(named: "profile.jpg")
-        setupImageView(imageView: profileImage)
        
 
     }
@@ -40,11 +39,5 @@ class EditProfileController: UIViewController {
         profileName.text = user.name ?? "User"
         nameTextField.text = user.name
         phoneTextField.text = user.phone
-    }
-    
-    func setupImageView(imageView:UIImageView){
-        imageView.layer.cornerRadius = imageView.frame.height / 2
-        imageView.layer.borderColor = UIColor.systemCyan.cgColor
-        imageView.layer.borderWidth = 1
     }
 }

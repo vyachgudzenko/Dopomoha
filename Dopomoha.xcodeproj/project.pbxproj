@@ -22,6 +22,9 @@
 		3E2FF66D284FA868006800F2 /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2FF66C284FA868006800F2 /* ShareController.swift */; };
 		3E30D0A7285810240035AA6B /* YellowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E30D0A6285810240035AA6B /* YellowButton.swift */; };
 		3E3358682854AEAF009A65E9 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */; };
+		3E3622A0285CB97200802C3D /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36229F285CB97200802C3D /* RoundImageView.swift */; };
+		3E3622F6285DEE3800802C3D /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3622F4285DEE3800802C3D /* CustomAlert.swift */; };
+		3E3622F7285DEE3800802C3D /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E3622F5285DEE3800802C3D /* CustomAlert.xib */; };
 		3E4D00B5284A99D40050B9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */; };
 		3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */; };
 		3E4D00BC284A99D40050B9B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4D00BA284A99D40050B9B5 /* Main.storyboard */; };
@@ -34,7 +37,6 @@
 		3E7B46642858CE5900A25A27 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46632858CE5900A25A27 /* File.swift */; };
 		3E7B46692858D76300A25A27 /* HelpPrototypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B46672858D76300A25A27 /* HelpPrototypeCell.swift */; };
 		3E7B466A2858D76300A25A27 /* HelpPrototypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7B46682858D76300A25A27 /* HelpPrototypeCell.xib */; };
-		3E7B4693285A27E300A25A27 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B4692285A27E300A25A27 /* CustomAlert.swift */; };
 		3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2100284D5085005B0EB1 /* NewQueryController.swift */; };
 		3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */; };
 		3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A210A284D5C59005B0EB1 /* HelpCell.swift */; };
@@ -61,6 +63,9 @@
 		3E2FF66C284FA868006800F2 /* ShareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareController.swift; sourceTree = "<group>"; };
 		3E30D0A6285810240035AA6B /* YellowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowButton.swift; sourceTree = "<group>"; };
 		3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		3E36229F285CB97200802C3D /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		3E3622F4285DEE3800802C3D /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		3E3622F5285DEE3800802C3D /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 		3E4D00B1284A99D40050B9B5 /* Dopomoha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopomoha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E4D00B6284A99D40050B9B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +80,6 @@
 		3E7B46632858CE5900A25A27 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3E7B46672858D76300A25A27 /* HelpPrototypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPrototypeCell.swift; sourceTree = "<group>"; };
 		3E7B46682858D76300A25A27 /* HelpPrototypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpPrototypeCell.xib; sourceTree = "<group>"; };
-		3E7B4692285A27E300A25A27 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		3E8A2100284D5085005B0EB1 /* NewQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQueryController.swift; sourceTree = "<group>"; };
 		3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedHelpController.swift; sourceTree = "<group>"; };
 		3E8A210A284D5C59005B0EB1 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
@@ -112,13 +116,14 @@
 		3E1DDA8628529185004AB6BC /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				3E3622F1285DEE0300802C3D /* CustomAlert */,
 				3E1DDA872852919B004AB6BC /* Line.swift */,
 				3E588CC12853576C00858CD2 /* EditProfileTextField.swift */,
 				3E3358672854AEAF009A65E9 /* CustomSegmentedControl.swift */,
 				3EED68922856A59E00534A2A /* CheckBox.swift */,
 				3E30D0A6285810240035AA6B /* YellowButton.swift */,
 				3E7B46632858CE5900A25A27 /* File.swift */,
-				3E7B4692285A27E300A25A27 /* CustomAlert.swift */,
+				3E36229F285CB97200802C3D /* RoundImageView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -152,6 +157,15 @@
 				3E4D00B4284A99D40050B9B5 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		3E3622F1285DEE0300802C3D /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				3E3622F4285DEE3800802C3D /* CustomAlert.swift */,
+				3E3622F5285DEE3800802C3D /* CustomAlert.xib */,
+			);
+			path = CustomAlert;
 			sourceTree = "<group>";
 		};
 		3E3A0B0B2858BEEC00ABFD45 /* Model */ = {
@@ -316,6 +330,7 @@
 				3E4D00C1284A99D60050B9B5 /* Assets.xcassets in Resources */,
 				3E4D00BC284A99D40050B9B5 /* Main.storyboard in Resources */,
 				3E2FF664284F9B14006800F2 /* SideMenuCell.xib in Resources */,
+				3E3622F7285DEE3800802C3D /* CustomAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,9 +388,11 @@
 				3E2FF66D284FA868006800F2 /* ShareController.swift in Sources */,
 				3E2FF660284F99BF006800F2 /* SideMenuElement.swift in Sources */,
 				3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */,
+				3E3622A0285CB97200802C3D /* RoundImageView.swift in Sources */,
 				3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */,
 				3E588CC22853576C00858CD2 /* EditProfileTextField.swift in Sources */,
 				3E1DDA392850D929004AB6BC /* SignUpViewController.swift in Sources */,
+				3E3622F6285DEE3800802C3D /* CustomAlert.swift in Sources */,
 				3E3358682854AEAF009A65E9 /* CustomSegmentedControl.swift in Sources */,
 				3EED68932856A59E00534A2A /* CheckBox.swift in Sources */,
 				3E7B46642858CE5900A25A27 /* File.swift in Sources */,
@@ -386,7 +403,6 @@
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
 				3E7B46622858CD3100A25A27 /* MyHelpController.swift in Sources */,
 				3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */,
-				3E7B4693285A27E300A25A27 /* CustomAlert.swift in Sources */,
 				3E1DDA372850D679004AB6BC /* StartViewController.swift in Sources */,
 				3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */,
 				3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */,

@@ -19,7 +19,7 @@ class SideMenuDetailController: UIViewController {
 
     @IBOutlet weak var profileNameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileImageView: RoundImageView!
     
     @IBOutlet weak var editProfileButton: UIButton!
     @IBOutlet weak var exitButton: UIButton!
@@ -74,18 +74,11 @@ class SideMenuDetailController: UIViewController {
         tableView.delegate = self
         let cellNib = UINib(nibName: SideMenuCell().identifier, bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: SideMenuCell().identifier)
-        setupImageView(imageView: profileImageView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         user.loadUserData()
         setupProfileData()
-    }
-    
-    func setupImageView(imageView:UIImageView){
-        imageView.layer.cornerRadius = imageView.frame.height / 2
-        imageView.layer.borderColor = UIColor.systemCyan.cgColor
-        imageView.layer.borderWidth = 1
     }
 }
 
