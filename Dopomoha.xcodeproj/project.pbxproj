@@ -41,6 +41,7 @@
 		3E8A2101284D5085005B0EB1 /* NewQueryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2100284D5085005B0EB1 /* NewQueryController.swift */; };
 		3E8A2103284D53EB005B0EB1 /* NeedHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */; };
 		3E8A210B284D5C59005B0EB1 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A210A284D5C59005B0EB1 /* HelpCell.swift */; };
+		3EDDE1EF285E77F6000705BB /* DetailHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDDE1EE285E77F6000705BB /* DetailHelpController.swift */; };
 		3EED68932856A59E00534A2A /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED68922856A59E00534A2A /* CheckBox.swift */; };
 		3EED689828576E7800534A2A /* HelpQueryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EED689628576E7800534A2A /* HelpQueryCell.swift */; };
 		3EED689928576E7800534A2A /* HelpQueryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EED689728576E7800534A2A /* HelpQueryCell.xib */; };
@@ -85,6 +86,7 @@
 		3E8A2100284D5085005B0EB1 /* NewQueryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQueryController.swift; sourceTree = "<group>"; };
 		3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedHelpController.swift; sourceTree = "<group>"; };
 		3E8A210A284D5C59005B0EB1 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
+		3EDDE1EE285E77F6000705BB /* DetailHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHelpController.swift; sourceTree = "<group>"; };
 		3EED68922856A59E00534A2A /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		3EED689628576E7800534A2A /* HelpQueryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpQueryCell.swift; sourceTree = "<group>"; };
 		3EED689728576E7800534A2A /* HelpQueryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpQueryCell.xib; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			children = (
 				3E8A2102284D53EB005B0EB1 /* NeedHelpController.swift */,
 				3E8A210A284D5C59005B0EB1 /* HelpCell.swift */,
+				3EDDE1EE285E77F6000705BB /* DetailHelpController.swift */,
 			);
 			path = NeedHelp;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				3E4D00B7284A99D40050B9B5 /* SceneDelegate.swift in Sources */,
 				3E7B46622858CD3100A25A27 /* MyHelpController.swift in Sources */,
 				3E2FF663284F9B14006800F2 /* SideMenuCell.swift in Sources */,
+				3EDDE1EF285E77F6000705BB /* DetailHelpController.swift in Sources */,
 				3E1DDA372850D679004AB6BC /* StartViewController.swift in Sources */,
 				3E2FF669284FA82D006800F2 /* DonateController.swift in Sources */,
 				3E4D00CC284AA1A90050B9B5 /* SideMenuDetailController.swift in Sources */,
