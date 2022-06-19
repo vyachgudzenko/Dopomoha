@@ -33,9 +33,16 @@ class DetailHelpController: UIViewController {
         confirmButton.layer.borderColor = UIColor.systemCyan.cgColor
         confirmButton.layer.borderWidth = 1
     }
+    
+    private func setupNavigationBar(){
+        createCustomNAvigationBar()
+        navigationItem.titleView = createCustomTitleView(help: help!)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupNavigationBar()
         // Do any additional setup after loading the view.
     }
 }
