@@ -21,6 +21,7 @@ class CustomAlert: UIViewController {
     @IBOutlet weak var alertView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var okButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     
@@ -63,13 +64,7 @@ class CustomAlert: UIViewController {
     func showAlert(title:String,message:String,okButtonType:OkButtonType){
         alertTitle = title
         alertMessage = message
-        switch okButtonType {
-        case .authorization:
-            alertType = okButtonType
-        case .confirm:
-            alertType = okButtonType
-        }
-        
+        alertType = okButtonType
         if #available(iOS 13, *) {
         UIApplication.shared.windows.first?.rootViewController?.present(self, animated: true, completion: nil)
         } else {
@@ -79,19 +74,9 @@ class CustomAlert: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image = UIImage(named: "dopomoha")?.withRenderingMode(.alwaysTemplate)
+        imageView.tintColor = .yellow
         setupAlert()
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -25,6 +25,11 @@ class NeedHelpController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBAction func filterButtonPressed(_ sender:UIBarButtonItem){
+        let popupFilter = PopupFilter()
+        popupFilter.showPopup(viewController: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self

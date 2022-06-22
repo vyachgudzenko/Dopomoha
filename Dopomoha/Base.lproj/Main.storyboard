@@ -550,7 +550,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AG9-fC-SPi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1143" y="-65"/>
+            <point key="canvasLocation" x="-991" y="-65"/>
         </scene>
         <!--Tabbar Controller-->
         <scene sceneID="0vz-Qn-2tB">
@@ -684,9 +684,10 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                 <segue destination="PP3-nn-Iax" kind="presentation" id="3cs-Wf-hmx"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Моя помощь" id="5Fm-Mk-8cs">
+                        <barButtonItem key="rightBarButtonItem" title="Моя помощь" id="QLY-p5-YZ9">
+                            <color key="tintColor" systemColor="systemCyanColor"/>
                             <connections>
-                                <action selector="myHelpPressed:" destination="Mdb-4R-t1b" id="RiO-5d-D2Y"/>
+                                <action selector="myHelpPressed:" destination="Mdb-4R-t1b" id="yn8-as-DlX"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -701,7 +702,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
         <!--Что требуется?-->
         <scene sceneID="cRY-9x-rsX">
             <objects>
-                <viewController id="aOg-LT-6E8" customClass="NewQueryController" customModule="Dopomoha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewQueryController" id="aOg-LT-6E8" customClass="NewQueryController" customModule="Dopomoha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gNf-ih-whe">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -713,7 +714,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                                     <constraint firstAttribute="height" constant="40" id="tYq-wb-nCB"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="commaSeparatedButtonTitles" value="Material,physical,moral"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="commaSeparatedButtonTitles" value="Материально,Физически,Морально"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
@@ -1005,7 +1006,11 @@ Personal data are processed in accordance with the terms of the Privacy policy</
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" image="line.3.horizontal.decrease" catalog="system" id="nQm-8r-zc8"/>
+                            <barButtonItem title="Item" image="line.3.horizontal.decrease" catalog="system" id="nQm-8r-zc8">
+                                <connections>
+                                    <action selector="filterButtonPressed:" destination="IQx-Tx-uPa" id="FHd-jX-l70"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem title="Item" image="globe" catalog="system" id="Ix1-jp-aKS"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -1021,7 +1026,7 @@ Personal data are processed in accordance with the terms of the Privacy policy</
         <scene sceneID="SkM-7j-E5u">
             <objects>
                 <navigationController id="n3O-XI-M4K" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Предоставить" image="heart" id="LhG-dh-SOP"/>
+                    <tabBarItem key="tabBarItem" title="Предоставить" image="dopomoha" id="LhG-dh-SOP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QVl-Lh-WLs">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1391,16 +1396,16 @@ Personal data are processed in accordance with the terms of the Privacy policy</
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3cs-Wf-hmx"/>
+        <segue reference="Lao-A6-F7W"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="StartImage" width="98" height="98"/>
         <image name="Vector" width="7" height="12"/>
         <image name="checkmark" catalog="system" width="128" height="114"/>
+        <image name="dopomoha" width="26" height="24"/>
         <image name="edit2" width="15" height="15"/>
         <image name="globe" catalog="system" width="128" height="121"/>
         <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="heart" width="26" height="24"/>
         <image name="herb" width="256" height="394"/>
         <image name="line.3.horizontal.decrease" catalog="system" width="128" height="73"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>

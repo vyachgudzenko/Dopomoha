@@ -38,4 +38,17 @@ extension UIViewController{
         }
         return view
     }
+    
+    func createRightBarItem(title:String,selector:Selector) -> UIBarButtonItem{
+        let button = UIButton(type: .system)
+        button.tintColor = .systemCyan
+        button.setTitle(title, for: .normal)
+        button.addTarget(self, action: selector, for: .touchUpInside)
+        button.layer.cornerRadius = button.frame.height / 2
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.yellow.cgColor
+        button.layer.masksToBounds = true
+        let menuBarItem = UIBarButtonItem(customView: button)
+        return menuBarItem
+    }
 }

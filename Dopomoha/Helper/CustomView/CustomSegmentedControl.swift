@@ -11,10 +11,16 @@ import UIKit
 
 class CustomSegmentedControl: UIControl {
     var buttons = [UIButton]()
-    var categories:[String] = ["Материально","Физически","Морально"]
+    var categories:[String] = ["1","2","3"]{
+        didSet{
+            updateView()
+        }
+    }
+    
     var selector:UIView!
     var selectedSegmentIndex:Int = 0
     var selectedType:String = "Материально"
+    var buttonTitles:[String]?
     
     
     @IBInspectable
@@ -42,6 +48,7 @@ class CustomSegmentedControl: UIControl {
             updateView()
         }
     }
+    
     @IBInspectable
     var selectorTextColor:UIColor = .white{
         didSet{
@@ -54,8 +61,7 @@ class CustomSegmentedControl: UIControl {
         subviews.forEach { view in
             view.removeFromSuperview()
         }
-        self.translatesAutoresizingMaskIntoConstraints = false
-        for buttonTitle in self.categories {
+        for buttonTitle in categories {
             let button = UIButton(type: .system)
             button.setTitle(buttonTitle, for: .normal)
             button.setTitleColor(textColor, for: .normal)
@@ -70,15 +76,16 @@ class CustomSegmentedControl: UIControl {
         selector.backgroundColor = selectorColor
         addSubview(selector)
         let stackView = UIStackView(arrangedSubviews: buttons)
+        stackView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
         stackView.axis = .horizontal
         stackView.alignment = .fill
         stackView.distribution = .fillProportionally
         addSubview(stackView)
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        /*stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         stackView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        stackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
+        stackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true*/
         
     }
     

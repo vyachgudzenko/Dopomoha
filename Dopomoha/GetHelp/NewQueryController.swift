@@ -46,6 +46,7 @@ class NewQueryController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        segmentedController.categories = ["Материально","Физически","Морально"]
         currentCategories = typeAndCategories[segmentedController.selectedType]!
         tableView.delegate = self
         tableView.dataSource = self

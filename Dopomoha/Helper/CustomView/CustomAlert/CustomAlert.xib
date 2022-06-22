@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="alertView" destination="RXt-Qy-hQa" id="hRH-c5-tfX"/>
                 <outlet property="cancelButton" destination="R6k-XH-F2m" id="w9u-DV-g25"/>
+                <outlet property="imageView" destination="MJb-Nt-qO6" id="1V4-n0-PJJ"/>
                 <outlet property="messageLabel" destination="rpr-RP-JhD" id="vWZ-sY-poL"/>
                 <outlet property="okButton" destination="VSs-b3-uz9" id="D6t-Sj-NKV"/>
                 <outlet property="titleLabel" destination="PJs-nZ-3Al" id="evE-LJ-YUu"/>
@@ -29,11 +30,11 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tp7-WB-lfq">
                             <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MJb-Nt-qO6">
-                                    <rect key="frame" x="10" y="1.5" width="50" height="47.5"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="MJb-Nt-qO6">
+                                    <rect key="frame" x="10" y="10" width="40" height="40"/>
                                     <color key="tintColor" systemColor="systemYellowColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="50" id="yal-ix-n5F"/>
+                                        <constraint firstAttribute="width" constant="40" id="yal-ix-n5F"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJs-nZ-3Al">
@@ -45,12 +46,12 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstItem="PJs-nZ-3Al" firstAttribute="leading" secondItem="MJb-Nt-qO6" secondAttribute="trailing" constant="20" id="7VY-Ol-4IY"/>
+                                <constraint firstItem="PJs-nZ-3Al" firstAttribute="leading" secondItem="MJb-Nt-qO6" secondAttribute="trailing" constant="30" id="7VY-Ol-4IY"/>
                                 <constraint firstAttribute="height" constant="50" id="C8X-BJ-H7u"/>
                                 <constraint firstItem="MJb-Nt-qO6" firstAttribute="leading" secondItem="tp7-WB-lfq" secondAttribute="leading" constant="10" id="SDa-Jj-eMj"/>
                                 <constraint firstItem="PJs-nZ-3Al" firstAttribute="centerY" secondItem="tp7-WB-lfq" secondAttribute="centerY" id="bUm-XS-Bbe"/>
                                 <constraint firstAttribute="bottom" secondItem="MJb-Nt-qO6" secondAttribute="bottom" id="gEh-B7-PO1"/>
-                                <constraint firstItem="MJb-Nt-qO6" firstAttribute="top" secondItem="tp7-WB-lfq" secondAttribute="top" id="kLM-dm-M4T"/>
+                                <constraint firstItem="MJb-Nt-qO6" firstAttribute="top" secondItem="tp7-WB-lfq" secondAttribute="top" constant="10" id="kLM-dm-M4T"/>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rbn-fh-i5s">
@@ -114,7 +115,7 @@
         </view>
     </objects>
     <resources>
-        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart" width="26" height="24"/>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
