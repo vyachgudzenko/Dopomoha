@@ -45,6 +45,7 @@ class CustomSegmentedControl: UIControl {
         for (index, title) in titles.enumerated(){
             let button = UIButton(type: .system)
             button.frame = CGRect(x: sectorWidth! * CGFloat(index), y: 0, width: sectorWidth!, height: frame.height)
+            button.contentMode = .scaleAspectFit
             button.setTitle(title, for: .normal)
             button.setTitleColor(textColor, for: .normal)
             button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
