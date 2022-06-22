@@ -75,13 +75,6 @@ class PopupFilter{
         sortLabel.textAlignment = .center
         popupFilter.addSubview(sortLabel)
         
-        let sortSegmented = CustomSegmentedControl(frame: CGRect(x: marginX, y: sortLabel.frame.origin.y + sortLabel.frame.height + 1, width: widthWithMargin, height: 50))
-        sortSegmented.borderWith = 1
-        sortSegmented.borderColor = .yellow
-        sortSegmented.categories = ["Ближайшие","Новейшие","Давние"]
-        sortSegmented.selectorColor = .clear
-        popupFilter.addSubview(sortSegmented)
-        
     }
     
     

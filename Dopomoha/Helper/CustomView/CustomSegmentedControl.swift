@@ -10,108 +10,67 @@ import UIKit
 
 
 class CustomSegmentedControl: UIControl {
-    var buttons = [UIButton]()
-    var categories:[String] = ["1","2","3"]{
-        didSet{
-            updateView()
-        }
+    
+    var buttons:[UIButton] = []
+    var titles:[String] = ["One","two","three"]
+    var selectedType:String?
+    
+    var selector:UIView?
+    var sectorWidth:CGFloat?
+    var textColor:UIColor = .white
+    
+    var selectorColor:UIColor = .yellow
+    var selectorTextColor:UIColor = .tintColor
+    var borderColor:UIColor = .systemCyan
+    
+    
+
+    override func draw(_ rect: CGRect) {
+        selectedType = titles[0]
+        layer.backgroundColor = UIColor.clear.cgColor
+        layer.cornerRadius = frame.height / 2
+        layer.borderColor = borderColor.cgColor
+        layer.borderWidth = 1
+        layer.masksToBounds = true
+        updateViews()
+        print(self.bounds)
     }
     
-    var selector:UIView!
-    var selectedSegmentIndex:Int = 0
-    var selectedType:String = "Материально"
-    var buttonTitles:[String]?
-    
-    
-    @IBInspectable
-    var borderWith:CGFloat = 0 {
-        didSet{
-            layer.borderWidth = borderWith
-        }
-    }
-    @IBInspectable
-    var borderColor:UIColor = .clear {
-        didSet{
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
-    @IBInspectable
-    var textColor:UIColor = .lightGray {
-        didSet{
-            updateView()
-        }
-    }
-    @IBInspectable
-    var selectorColor:UIColor = .darkGray {
-        didSet{
-            updateView()
-        }
-    }
-    
-    @IBInspectable
-    var selectorTextColor:UIColor = .white{
-        didSet{
-            updateView()
-        }
-    }
-    
-    func updateView(){
-        buttons.removeAll()
-        subviews.forEach { view in
-            view.removeFromSuperview()
-        }
-        for buttonTitle in categories {
+    func updateViews(){
+        sectorWidth = frame.width / CGFloat(titles.count)
+        selector = UIView(frame: CGRect(x: 0, y: 0, width: sectorWidth!, height: frame.height))
+        selector?.layer.cornerRadius = (selector?.frame.height)! / 2
+        selector?.backgroundColor = selectorColor
+        addSubview(selector!)
+        for (index, title) in titles.enumerated(){
             let button = UIButton(type: .system)
-            button.setTitle(buttonTitle, for: .normal)
+            button.frame = CGRect(x: sectorWidth! * CGFloat(index), y: 0, width: sectorWidth!, height: frame.height)
+            button.setTitle(title, for: .normal)
             button.setTitleColor(textColor, for: .normal)
-            button.contentMode = .scaleAspectFit
             button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+            addSubview(button)
             buttons.append(button)
         }
         buttons[0].setTitleColor(selectorTextColor, for: .normal)
-        let selectorWidth = frame.width / CGFloat(buttons.count)
-        selector = UIView(frame: CGRect(x: 0, y: 0, width: selectorWidth, height: frame.height))
-        selector.layer.cornerRadius = frame.height / 2
-        selector.backgroundColor = selectorColor
-        addSubview(selector)
-        let stackView = UIStackView(arrangedSubviews: buttons)
-        stackView.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
-        stackView.axis = .horizontal
-        stackView.alignment = .fill
-        stackView.distribution = .fillProportionally
-        addSubview(stackView)
-        /*stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        stackView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        stackView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true*/
-        
-    }
-    
-    
-    override func draw(_ rect: CGRect) {
-        layer.cornerRadius = frame.height / 2
         
     }
     
     @objc
     func buttonTapped(button:UIButton){
-        for (buttonIndex,btn) in buttons.enumerated(){
+        for (btnIndex,btn) in buttons.enumerated(){
             btn.setTitleColor(textColor, for: .normal)
-            btn.contentMode = .left
             if btn == button{
-                selectedSegmentIndex = buttonIndex
-                selectedType = categories[selectedSegmentIndex]
-                let selectorStartPosition = frame.width / CGFloat(buttons.count) * CGFloat(buttonIndex)
+                selectedType = titles[btnIndex]
                 UIView.animate(withDuration: 0.5) {
-                    self.selector.frame.origin.x = selectorStartPosition
+                    self.selector?.frame.origin.x = self.sectorWidth! * CGFloat(btnIndex)
                 }
                 btn.setTitleColor(selectorTextColor, for: .normal)
             }
         }
         sendActions(for: .valueChanged)
     }
-
+    
+    
 }
+
 

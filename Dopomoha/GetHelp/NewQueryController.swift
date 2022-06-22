@@ -40,14 +40,16 @@ class NewQueryController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     @IBAction func segmentedControlChanged(_ sender:CustomSegmentedControl){
-        currentCategories = typeAndCategories[segmentedController.selectedType]!
+        currentCategories = typeAndCategories[segmentedController.selectedType!]!
         tableView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        segmentedController.categories = ["Материально","Физически","Морально"]
-        currentCategories = typeAndCategories[segmentedController.selectedType]!
+        
+        segmentedController.titles = ["Материально","Физически","Морально"]
+        segmentedController.selectedType = segmentedController.titles[0]
+        currentCategories = typeAndCategories[segmentedController.selectedType!]!
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .clear
