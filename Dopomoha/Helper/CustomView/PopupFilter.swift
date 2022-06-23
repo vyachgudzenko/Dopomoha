@@ -9,10 +9,11 @@ import Foundation
 import UIKit
 
 class PopupFilter{
+    // Constants
     struct Constant{
         static let backgroundAlpha:CGFloat = 0.6
     }
-    
+    //View
     private var myTargetView:UIView?
     
     private var backgroundView:UIView = {
@@ -31,10 +32,15 @@ class PopupFilter{
         return popupFilter
     }()
     
+    //elements of PopupView
     var sortSegmented:CustomSegmentedControl!
     var categorySegmented:CustomSegmentedControl!
     var distanceSlider:UISlider!
     var checkBox:CheckBox!
+    
+    //other
+    var filter:[String:Any]?
+    var isHidden:Bool = true
     
     func showPopup(viewController:UIViewController){
         guard let targetView = viewController.view else {
@@ -45,7 +51,7 @@ class PopupFilter{
         backgroundView.frame = targetView.bounds
         targetView.addSubview(backgroundView)
         
-        popupFilter.frame = CGRect(x: 0, y: targetView.frame.height * 2, width: targetView.frame.width, height: targetView.frame.height / 2)
+        popupFilter.frame = CGRect(x: 0, y: targetView.frame.height * 2, width: targetView.frame.width, height: targetView.frame.height / 1.5)
         popupFilter.translatesAutoresizingMaskIntoConstraints = false
         targetView.addSubview(popupFilter)
         createNeedHelpFilter()
@@ -54,7 +60,7 @@ class PopupFilter{
         } completion: { done in
             if done{
                 UIView.animate(withDuration: 0.5) {
-                    self.popupFilter.frame = CGRect(x: 0, y: targetView.frame.height / 2, width: targetView.frame.width, height: targetView.frame.height / 2)
+                    self.popupFilter.frame = CGRect(x: 0, y: targetView.frame.height / 2.5, width: targetView.frame.width, height: targetView.frame.height / 1.5)
                 }
             }
         }
@@ -117,7 +123,7 @@ class PopupFilter{
         categorySegmented = CustomSegmentedControl(frame: CGRect(x: marginX, y: 150, width: widthWithMargin, height: 40))
         categorySegmented.center.x = popupFilter.center.x
         categorySegmented.titles = ["Все","Материальная","Физическая","Моральная"]
-        categorySegmented.selectedType = sortSegmented.titles[0]
+        categorySegmented.selectedType = "Физическая"
         popupFilter.addSubview(categorySegmented!)
         
         let distanceLabel = UILabel(frame: CGRect(x: marginX, y: 200, width: widthWithMargin, height: 20))
@@ -176,6 +182,7 @@ class PopupFilter{
     
     @objc
     func cancelButtonTapped(){
+        self.isHidden = true
         self.dismissPopupFilter()
     }
     
@@ -186,7 +193,14 @@ class PopupFilter{
     
     @objc
     func okButtonTapped(){
-        print("ok")
+        var filter:[String:Any] = [
+            "sortFilter":sortSegmented.selectedType!,
+            "categoryFilter":categorySegmented.selectedType!,
+            "distanceFilter":distanceSlider.value,
+            "sosFIlter":checkBox.isChecked]
+        print(filter)
+        self.isHidden = true
+        self.dismissPopupFilter()
     }
     
 }

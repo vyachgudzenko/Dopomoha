@@ -17,7 +17,8 @@ struct Help{
 
 class NeedHelpController: UIViewController {
     var currentDate = Date()
-    var popupFilter:PopupFilter?
+    var popupFilter:PopupFilter = PopupFilter()
+
     
     var helpsList:[Help] = [
         Help(typeHelp: "Гигиена", description: "Нужен порошок, зубная паста sdfsdjfhskdfhskdjfhskfdhskfhjskdfhksdfhksdhfjkshjfksdhjfksjdhfskjdfhskdhfksdhfksjdhfksjhfksdjhfskjdhfksjdhfksjhfskdjhfkshdfks", distance: "44", date: "22 мая, 18:00" , isSOS: true),
@@ -27,8 +28,10 @@ class NeedHelpController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBAction func filterButtonPressed(_ sender:UIBarButtonItem){
-        popupFilter = PopupFilter()
-        popupFilter!.showPopup(viewController: self)
+        if popupFilter.isHidden{
+            popupFilter.showPopup(viewController: self)
+            popupFilter.isHidden = false
+        }
     }
     
     

@@ -14,6 +14,7 @@ class CustomSegmentedControl: UIControl {
     var buttons:[UIButton] = []
     var titles:[String] = ["One","two","three"]
     var selectedType:String?
+    var selectedIndex:Int?
     
     var selector:UIView?
     var sectorWidth:CGFloat?
@@ -26,19 +27,19 @@ class CustomSegmentedControl: UIControl {
     
 
     override func draw(_ rect: CGRect) {
-        selectedType = titles[0]
+        selectedIndex = titles.firstIndex(of: selectedType ?? titles[0])
+        selectedType = titles[selectedIndex!]
         layer.backgroundColor = UIColor.clear.cgColor
         layer.cornerRadius = frame.height / 2
         layer.borderColor = borderColor.cgColor
         layer.borderWidth = 1
         layer.masksToBounds = true
         updateViews()
-        print(self.bounds)
     }
     
     func updateViews(){
         sectorWidth = frame.width / CGFloat(titles.count)
-        selector = UIView(frame: CGRect(x: 0, y: 0, width: sectorWidth!, height: frame.height))
+        selector = UIView(frame: CGRect(x: sectorWidth! * CGFloat(selectedIndex!), y: 0, width: sectorWidth!, height: frame.height))
         selector?.layer.cornerRadius = (selector?.frame.height)! / 2
         selector?.backgroundColor = selectorColor
         addSubview(selector!)
@@ -52,7 +53,7 @@ class CustomSegmentedControl: UIControl {
             addSubview(button)
             buttons.append(button)
         }
-        buttons[0].setTitleColor(selectorTextColor, for: .normal)
+        buttons[selectedIndex!].setTitleColor(selectorTextColor, for: .normal)
         
     }
     
@@ -62,13 +63,17 @@ class CustomSegmentedControl: UIControl {
             btn.setTitleColor(textColor, for: .normal)
             if btn == button{
                 selectedType = titles[btnIndex]
-                UIView.animate(withDuration: 0.5) {
-                    self.selector?.frame.origin.x = self.sectorWidth! * CGFloat(btnIndex)
-                }
+                setPositionSelector(btnIndex)
                 btn.setTitleColor(selectorTextColor, for: .normal)
             }
         }
         sendActions(for: .valueChanged)
+    }
+    
+    func setPositionSelector(_ btnIndex:Int){
+        UIView.animate(withDuration: 0.5) {
+            self.selector?.frame.origin.x = self.sectorWidth! * CGFloat(btnIndex)
+        }
     }
     
     
