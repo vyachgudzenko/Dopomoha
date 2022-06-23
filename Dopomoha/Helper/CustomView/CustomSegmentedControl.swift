@@ -13,7 +13,7 @@ class CustomSegmentedControl: UIControl {
     
     var buttons:[UIButton] = []
     var titles:[String] = ["One","two","three"]
-    var selectedType:String?
+    var selectedType:String? 
     var selectedIndex:Int?
     
     var selector:UIView?
@@ -38,6 +38,10 @@ class CustomSegmentedControl: UIControl {
     }
     
     func updateViews(){
+        buttons.removeAll()
+        subviews.forEach { view in
+            view.removeFromSuperview()
+        }
         sectorWidth = frame.width / CGFloat(titles.count)
         selector = UIView(frame: CGRect(x: sectorWidth! * CGFloat(selectedIndex!), y: 0, width: sectorWidth!, height: frame.height))
         selector?.layer.cornerRadius = (selector?.frame.height)! / 2

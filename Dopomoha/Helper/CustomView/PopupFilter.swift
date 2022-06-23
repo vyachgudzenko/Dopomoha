@@ -39,7 +39,7 @@ class PopupFilter{
     var checkBox:CheckBox!
     
     //other
-    var filter:[String:Any]?
+    var user = User()
     var isHidden:Bool = true
     
     func showPopup(viewController:UIViewController){
@@ -48,10 +48,12 @@ class PopupFilter{
         }
         
         myTargetView = targetView
+        print(myTargetView?.frame)
         backgroundView.frame = targetView.bounds
         targetView.addSubview(backgroundView)
+        let filterViewMultipier = 400 / targetView.frame.height
         
-        popupFilter.frame = CGRect(x: 0, y: targetView.frame.height * 2, width: targetView.frame.width, height: targetView.frame.height / 1.5)
+        popupFilter.frame = CGRect(x: 0, y: targetView.frame.height * 2, width: targetView.frame.width, height: targetView.frame.height * filterViewMultipier)
         popupFilter.translatesAutoresizingMaskIntoConstraints = false
         targetView.addSubview(popupFilter)
         createNeedHelpFilter()
@@ -60,7 +62,7 @@ class PopupFilter{
         } completion: { done in
             if done{
                 UIView.animate(withDuration: 0.5) {
-                    self.popupFilter.frame = CGRect(x: 0, y: targetView.frame.height / 2.5, width: targetView.frame.width, height: targetView.frame.height / 1.5)
+                    self.popupFilter.frame = CGRect(x: 0, y: targetView.frame.height - (targetView.frame.height * filterViewMultipier) - 30, width: targetView.frame.width, height: targetView.frame.height * filterViewMultipier)
                 }
             }
         }
@@ -89,6 +91,7 @@ class PopupFilter{
     }
     
     func createNeedHelpFilter(){
+        user.loadFilter()
         let marginX:CGFloat = 10
         let marginY:CGFloat = 10
         let widthWithMargin = popupFilter.frame.width - marginY * 2
@@ -110,7 +113,7 @@ class PopupFilter{
         sortSegmented = CustomSegmentedControl(frame: CGRect(x: marginX, y: 70, width: widthWithMargin - 80, height: 40))
         sortSegmented.center.x = popupFilter.center.x
         sortSegmented.titles = ["Ближайшие","Новейшие","Давние"]
-        sortSegmented.selectedType = sortSegmented.titles[0]
+        sortSegmented.selectedType = user.sortFilter ?? sortSegmented.titles.first
         popupFilter.addSubview(sortSegmented!)
         
         let categoryLabel = UILabel(frame: CGRect(x: marginX, y: 120, width: widthWithMargin, height: 20))
@@ -123,7 +126,7 @@ class PopupFilter{
         categorySegmented = CustomSegmentedControl(frame: CGRect(x: marginX, y: 150, width: widthWithMargin, height: 40))
         categorySegmented.center.x = popupFilter.center.x
         categorySegmented.titles = ["Все","Материальная","Физическая","Моральная"]
-        categorySegmented.selectedType = "Физическая"
+        categorySegmented.selectedType = user.categoryFilter ?? categorySegmented.titles.first
         popupFilter.addSubview(categorySegmented!)
         
         let distanceLabel = UILabel(frame: CGRect(x: marginX, y: 200, width: widthWithMargin, height: 20))
@@ -136,7 +139,7 @@ class PopupFilter{
         distanceSlider = UISlider(frame: CGRect(x: marginX, y: 230, width: widthWithMargin, height: 30))
         distanceSlider.minimumValue = 0
         distanceSlider.maximumValue = 500
-        distanceSlider.setValue(500, animated: true)
+        distanceSlider.setValue(user.distanceFilter ?? 500, animated: true)
         distanceSlider.minimumTrackTintColor = .systemCyan
         distanceSlider.thumbTintColor = .systemCyan
         distanceSlider.maximumTrackTintColor = .lightGray
@@ -144,6 +147,7 @@ class PopupFilter{
         
         checkBox = CheckBox(frame: CGRect(x: marginX, y: 270, width: 30, height: 30))
         checkBox.checkImageColor = .red
+        checkBox.isChecked = user.sosFIlter ?? false
         popupFilter.addSubview(checkBox)
         
         let sosLabel = UILabel(frame: CGRect(x: 50, y: 275, width: 200, height: 20))
@@ -159,12 +163,6 @@ class PopupFilter{
         cancelButton.setImage(UIImage(systemName: "xmark"), for: .normal)
         cancelButton.addTarget(self, action: #selector(cancelButtonTapped), for: .touchUpInside)
         buttons.append(cancelButton)
-        
-        let resetButton = UIButton(type: .system)
-        resetButton.tintColor = .orange
-        resetButton.setImage(UIImage(systemName: "arrow.triangle.2.circlepath"), for: .normal)
-        resetButton.addTarget(self, action: #selector(resetButtonTapped), for: .touchUpInside)
-        buttons.append(resetButton)
         
         let okButton = UIButton(type: .system)
         okButton.tintColor = .green
@@ -187,18 +185,12 @@ class PopupFilter{
     }
     
     @objc
-    func resetButtonTapped(){
-        print("reset")
-    }
-    
-    @objc
     func okButtonTapped(){
-        var filter:[String:Any] = [
-            "sortFilter":sortSegmented.selectedType!,
-            "categoryFilter":categorySegmented.selectedType!,
-            "distanceFilter":distanceSlider.value,
-            "sosFIlter":checkBox.isChecked]
-        print(filter)
+        user.sortFilter = sortSegmented.selectedType
+        user.categoryFilter = categorySegmented.selectedType
+        user.distanceFilter = distanceSlider.value
+        user.sosFIlter = checkBox.isChecked
+        user.saveFilter()
         self.isHidden = true
         self.dismissPopupFilter()
     }

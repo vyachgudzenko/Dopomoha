@@ -13,7 +13,7 @@ class CheckBox:UIControl {
     
     let uncheckmarkImage:UIImage = UIImage(systemName: "square")!
     
-    var checkmarkImageView:UIImageView!
+    var checkmarkImageView:UIImageView?
     
     @IBInspectable
     var checkImageColor:UIColor = .tintColor {
@@ -22,23 +22,17 @@ class CheckBox:UIControl {
         }
     }
     
-    var isChecked:Bool = false {
-        didSet{
-            if isChecked{
-                checkmarkImageView.image = checkmarkImage
-            } else {
-                checkmarkImageView.image = uncheckmarkImage
-            }
-        }
-    }
+    var isChecked:Bool = false
     
-
     override func draw(_ rect: CGRect) {
         layer.backgroundColor = UIColor.clear.cgColor
         checkmarkImageView = UIImageView(frame: rect)
-        checkmarkImageView.image = uncheckmarkImage
-        //checkmarkImageView.tintColor = .white
-        addSubview(checkmarkImageView)
+        if isChecked {
+            checkmarkImageView?.image = checkmarkImage
+        } else {
+            checkmarkImageView?.image = uncheckmarkImage
+        }
+        addSubview(checkmarkImageView!)
         let gesture = UITapGestureRecognizer(target: self, action: #selector(toggle))
         self.addGestureRecognizer(gesture)
     }
@@ -46,7 +40,12 @@ class CheckBox:UIControl {
     @objc
     func toggle(){
         isChecked = !isChecked
-        checkmarkImageView.setNeedsDisplay()
+        if isChecked{
+            checkmarkImageView?.image = checkmarkImage
+        } else {
+            checkmarkImageView?.image = uncheckmarkImage
+        }
+        checkmarkImageView!.setNeedsDisplay()
         sendActions(for: .valueChanged)
     }
 

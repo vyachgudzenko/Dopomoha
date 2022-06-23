@@ -16,7 +16,11 @@ class GetHelpController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         user.loadUserData()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        user.loadFilter()
+        print("from gethelp \(user.sosFIlter)")
     }
     
     @IBAction func createNewQuery(_ sender:UIButton){
